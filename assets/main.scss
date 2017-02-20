@@ -1,4 +1,74 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
+
+$primary: #231F20;
+$secondary: #fff;
+$unit: 15px;
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  color: $primary;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: $unit;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  font-weight: bold;
+  padding: $unit / 4 $unit / 2;
+}
+
+a:hover {
+  color: $secondary;
+  background: $primary;
+}
+
+img {
+  max-width: 100%;
+}
+
+.left-col {
+  float: left;
+  margin: $unit;
+  width: $unit * 20;
+}
+
+.right-col {
+  float: left;
+  margin: $unit;
+  width: $unit * 40;
+}
+
+
+nav {
+  margin: $unit auto;
+  max-width: $unit * 10;
+
+  #toggle {
+    display: none;
+  }
+
+  #menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-item {
+    display: block;
+    padding: $unit / 2;
+  }
+}
+
+footer {
+  text-align: center;
+}
