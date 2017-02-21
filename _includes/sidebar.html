@@ -7,10 +7,10 @@
         </a>
 
         <div id="menu">
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <a class="menu-item" href="{{ my_page.url | relative_url }}">
-                <i class="fa fa-fw fa-lg">&nbsp;</i>{{ my_page.title | downcase | escape }}
+            {% for p in site.pages %}
+            {% if p.title %}
+            <a class="menu-item" href="{{ p.url | relative_url }}">
+                <i class="fa {% if page.id == p.id %}fa-angle-right{% endif %} fa-fw fa-lg"></i>{{ p.title | downcase | escape }}
             </a>
             {% endif %}
             {% endfor %}

@@ -1,0 +1,21 @@
+{% if include.tag %}
+{% assign posts = site.tags[include.tag] %}
+{% else %}
+{% assign posts = site.posts %}
+{% endif %}
+
+<div>
+    {% for post in posts limit: include.limit %}
+    <div>
+        <h2>
+            {{ post.title | escape }}
+        </h2>
+
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        {{ post.excerpt }}
+
+        <a href="{{ post.url | relative_url }}">Read more<i class="fa fa-angle-right fa-fw fa-lg"></i></a>
+    </div>
+    {% endfor %}
+</div>
