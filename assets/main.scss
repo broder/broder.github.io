@@ -42,6 +42,31 @@ img {
   clear: both;
 }
 
+@media screen and (min-width: $unit * 64) {
+  header {
+    position: fixed;
+    width: $unit * 20;
+    margin: $unit;
+  }
+  main {
+    position: relative;
+    left: $unit * 22;
+    width: $unit * 40;
+    margin: 0 $unit;
+  }
+}
+
+@media screen and (max-width: $unit * 64) {
+  header {
+    width: 100%;
+    margin: $unit 0;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 header {
   @media screen and (min-width: $unit * 64) {
     position: fixed;
@@ -71,17 +96,6 @@ header {
 }
 
 main {
-  @media screen and (min-width: $unit * 64) {
-    position: relative;
-    left: $unit * 22;
-    width: $unit * 40;
-    margin: 0 $unit;
-  }
-  @media screen and (max-width: $unit * 64) {
-    width: 100%;
-    margin: 0;
-  }
-
   .container {
     margin-bottom: $unit;
     .heading {
@@ -100,8 +114,21 @@ main {
       }
     }
     .content {
-      margin: $unit / 2 $unit;
+      margin: $unit;
       text-align: justify;
+
+      img {
+        display: block;
+        width: 100%;
+        max-height: $unit * 10;
+        object-fit: cover;
+        margin: $unit 0;
+      }
+
+      p {
+        margin: $unit 0;
+      }
+
       .more {
         float: left;
       }
