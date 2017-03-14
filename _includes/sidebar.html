@@ -1,39 +1,32 @@
-<header>
-    <img src="{{ "/assets/logo.png" | relative_url }}" />
+<img src="{{ "/assets/logo.png" | relative_url }}" />
 
-    <nav>
-        <a class="menu-item" href="#menu" id="toggle">
-            <i class="fa fa-bars fa-fw fa-lg" aria-hidden="true"></i>menu
-        </a>
+<nav>
+    {% for p in site.pages %}
+    {% if p.title %}
+    <a class="menu-item" href="{{ p.url | relative_url }}">
+        <i class="fa {% if page.id == p.id %}fa-angle-right{% endif %} fa-fw fa-lg"></i>{{ p.title | downcase | escape
+        }}
+    </a>
+    {% endif %}
+    {% endfor %}
 
-        <div id="menu">
-            {% for p in site.pages %}
-            {% if p.title %}
-            <a class="menu-item" href="{{ p.url | relative_url }}">
-                <i class="fa {% if page.id == p.id %}fa-angle-right{% endif %} fa-fw fa-lg"></i>{{ p.title | downcase | escape }}
-            </a>
-            {% endif %}
-            {% endfor %}
+    <a class="menu-item" href="https://facebook.com/{{site.facebook_username}}">
+        <i class="fa fa-facebook-square fa-fw fa-lg" aria-hidden="true"></i>facebook
+    </a>
 
-            <a class="menu-item" href="https://facebook.com/{{site.facebook_username}}">
-                <i class="fa fa-facebook-square fa-fw fa-lg" aria-hidden="true"></i>facebook
-            </a>
+    <a class="menu-item" href="https://twitter.com/{{site.twitter_username}}">
+        <i class="fa fa-twitter-square fa-fw fa-lg" aria-hidden="true"></i>twitter
+    </a>
 
-            <a class="menu-item" href="https://twitter.com/{{site.twitter_username}}">
-                <i class="fa fa-twitter-square fa-fw fa-lg" aria-hidden="true"></i>twitter
-            </a>
+    <a class="menu-item" href="https://linkedin.com/in/{{site.linkedin_username}}">
+        <i class="fa fa-linkedin-square fa-fw fa-lg" aria-hidden="true"></i>linkedin
+    </a>
 
-            <a class="menu-item" href="https://linkedin.com/in/{{site.linkedin_username}}">
-                <i class="fa fa-linkedin-square fa-fw fa-lg" aria-hidden="true"></i>linkedin
-            </a>
+    <a class="menu-item" href="https://github.com/{{site.github_username}}">
+        <i class="fa fa-github-square fa-fw fa-lg" aria-hidden="true"></i>github
+    </a>
 
-            <a class="menu-item" href="https://github.com/{{site.github_username}}">
-                <i class="fa fa-github-square fa-fw fa-lg" aria-hidden="true"></i>github
-            </a>
-
-            <a class="menu-item" href="https://steamcommunity.com/id/{{site.steam_username}}">
-                <i class="fa fa-steam-square fa-fw fa-lg" aria-hidden="true"></i>steam
-            </a>
-        </div>
-    </nav>
-</header>
+    <a class="menu-item" href="https://steamcommunity.com/id/{{site.steam_username}}">
+        <i class="fa fa-steam-square fa-fw fa-lg" aria-hidden="true"></i>steam
+    </a>
+</nav>

@@ -36,77 +36,80 @@ img {
   max-width: 100%;
 }
 
-.left-col {
-  position: fixed;
-  top: 0;
-  margin: $unit;
-  width: $unit * 20;
-}
-
-.right-col {
-  position: relative;
-  left: $unit * 22;
-  margin: 0 $unit;
-  width: $unit * 40;
-}
-
-nav {
-  margin: $unit auto;
-  max-width: $unit * 10;
-
-  #toggle {
-    display: none;
-  }
-
-  #menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu-item {
-    display: block;
-    padding: $unit / 2;
-  }
-}
-
 .clearfix:after {
-  content:"";
-  display:block;
-  clear:both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.container {
-  margin-bottom: $unit;
-  .heading {
+header {
+  @media screen and (min-width: $unit * 64) {
+    position: fixed;
+    width: $unit * 20;
+    margin: $unit;
+  }
+  @media screen and (max-width: $unit * 64) {
     width: 100%;
-    display: inline-block;
-    border-bottom: 2px solid $primary;
-    .title {
-      margin: $unit / 2 $unit;
-      float: left;
-      font-size: $unit * 2;
-    }
-    .subtitle {
-      margin: $unit * 3 / 2 $unit $unit / 2 $unit;
-      float: right;
-      font-size: $unit;
-    }
+    margin: $unit 0;
   }
-  .content {
-    margin: $unit / 2 $unit;
-    text-align: justify;
-    .more {
-      float: left;
-    }
-    .date {
-      float: right;
+  top: 0;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav {
+    margin: $unit auto;
+    max-width: $unit * 10;
+
+    .menu-item {
+      display: block;
+      padding: $unit / 2;
     }
   }
 }
 
-footer {
-  text-align: center;
+main {
+  @media screen and (min-width: $unit * 64) {
+    position: relative;
+    left: $unit * 22;
+    width: $unit * 40;
+    margin: 0 $unit;
+  }
+  @media screen and (max-width: $unit * 64) {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container {
+    margin-bottom: $unit;
+    .heading {
+      width: 100%;
+      display: inline-block;
+      border-bottom: 2px solid $primary;
+      .title {
+        margin: $unit / 2 $unit;
+        float: left;
+        font-size: $unit * 2;
+      }
+      .subtitle {
+        margin: $unit * 3 / 2 $unit $unit / 2 $unit;
+        float: right;
+        font-size: $unit;
+      }
+    }
+    .content {
+      margin: $unit / 2 $unit;
+      text-align: justify;
+      .more {
+        float: left;
+      }
+      .date {
+        float: right;
+      }
+    }
+  }
 }
 
 @import "_syntax-highlighting";
