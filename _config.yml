@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: David Broder-Rodgers
+author: David Broder-Rodgers
 description: >
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -26,14 +27,18 @@ date_format: "%b %-d, %Y"
 facebook_username: dbroderr
 twitter_username: dbroderr
 linkedin_username: broder
-github_username:  broder
-github_project:  broder.github.io
 steam_username:  broder
+
+repository: broder/broder.github.io
 
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
 exclude:
   - Gemfile
   - Gemfile.lock

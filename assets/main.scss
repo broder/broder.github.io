@@ -48,7 +48,7 @@ img {
     width: $unit * 20;
     margin: $unit;
   }
-  main {
+  main, footer {
     position: relative;
     left: $unit * 22;
     width: $unit * 40;
@@ -61,7 +61,7 @@ img {
     width: 100%;
     margin: $unit 0;
   }
-  main {
+  main, footer {
     width: 100%;
     margin: 0;
   }
