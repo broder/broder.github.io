@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "Test Project"
+title:    "Test Project 2"
 date:     2017-02-21 22:15:42 +0000
 image:    /assets/test.jpg
 category: project

@@ -1,0 +1,25 @@
+{% if include.paginator.total_pages > 1 %}
+<div class="pagination">
+    {% if include.paginator.previous_page %}
+    <a href="{{ include.paginator.previous_page_path }}"><i class="fa fa-angle-left fa-fw fa-lg"></i> prev</a>
+    {% else %}
+    <span class="disabled-link"><i class="fa fa-angle-left fa-fw fa-lg"></i>prev</span>
+    {% endif %}
+
+    {% for page in (1..include.paginator.total_pages) %}
+    {% if page == include.paginator.page %}
+    <span class="selected-link disabled-link">{{ page }}</span>
+    {% elsif page == 1 %}
+    <a href="{{ site.paginate_path | replace: '/:num/', '/' }}">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
+
+    {% if include.paginator.next_page %}
+    <a href="{{ include.paginator.next_page_path }}">next <i class="fa fa-angle-right fa-fw fa-lg"></i></a>
+    {% else %}
+    <span class="disabled-link">next <i class="fa fa-angle-right fa-fw fa-lg"></i></span>
+    {% endif %}
+</div>
+{% endif %}

@@ -1,0 +1,11 @@
+---
+title: Home
+id: home
+layout: default
+---
+
+{% include about.html %}
+
+{% include posts.html posts=paginator.posts %}
+
+{% include pagination.html paginator=paginator %}

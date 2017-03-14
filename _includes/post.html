@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="heading">
+        <h2 class="title">
+            {{ include.post.title | escape }}
+        </h2>
+        <h3 class="subtitle">{{ include.post.category }}</h3>
+    </div>
+
+    <div class="content">
+        {% if include.content %}
+        <img src="{{ include.post.image }}"/>
+        {{ include.content }}
+        {% else %}
+        <img class="preview" src="{{ include.post.image }}"/>
+        {{ include.post.excerpt }}
+        <div class="more">
+            <a href="{{ include.post.url | relative_url }}">more<i class="fa fa-angle-right fa-fw fa-lg"></i></a>
+        </div>
+        {% endif %}
+        <div class="date">{{ include.post.date | date: site.date_format }}</div>
+        <div class="clearfix"></div>
+    </div>
+</div>

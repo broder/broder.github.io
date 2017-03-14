@@ -1,13 +1,19 @@
+{% assign added_pages = '' %}
+
+<header>
 <img src="{{ "/assets/logo.png" | relative_url }}" />
 
 <nav>
     {% for p in site.pages %}
+    {% unless added_pages contains p.id + ',' %}
     {% if p.title %}
     <a class="menu-item" href="{{ p.url | relative_url }}">
-        <i class="fa {% if page.id == p.id %}fa-angle-right{% endif %} fa-fw fa-lg"></i>{{ p.title | downcase | escape
-        }}
+        <i class="fa {% if page.id == p.id %}fa-angle-right{% endif %} fa-fw fa-lg"></i>
+        {{ p.title | downcase | escape }}
     </a>
+    {% capture added_pages %}{{ added_pages }}{{ p.id }},{% endcapture %}
     {% endif %}
+    {% endunless %}
     {% endfor %}
 
     <a class="menu-item" href="https://facebook.com/{{site.facebook_username}}">
@@ -30,3 +36,4 @@
         <i class="fa fa-steam-square fa-fw fa-lg" aria-hidden="true"></i>steam
     </a>
 </nav>
+</header>

@@ -20,16 +20,16 @@ body {
   font-size: $unit;
 }
 
-a {
+.disabled-link, .selected-link, a {
   color: $primary;
   text-decoration: none;
   font-weight: bold;
   padding: $unit / 4 $unit / 2;
+}
 
-  &:hover {
-    color: $secondary;
-    background: $primary;
-  }
+.selected-link, a:hover {
+  color: $secondary;
+  background: $primary;
 }
 
 img {
@@ -120,9 +120,12 @@ main {
       img {
         display: block;
         width: 100%;
-        max-height: $unit * 10;
         object-fit: cover;
         margin: $unit 0;
+
+        &.preview {
+          max-height: $unit * 10;
+        }
       }
 
       p {
@@ -137,6 +140,11 @@ main {
       }
     }
   }
+}
+
+.pagination, footer {
+  margin: $unit;
+  text-align: center;
 }
 
 @import "_syntax-highlighting";
