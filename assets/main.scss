@@ -37,14 +37,16 @@ img {
 }
 
 .left-col {
-  float: left;
+  position: fixed;
+  top: 0;
   margin: $unit;
   width: $unit * 20;
 }
 
 .right-col {
-  float: left;
-  margin: $unit;
+  position: relative;
+  left: $unit * 22;
+  margin: 0 $unit;
   width: $unit * 40;
 }
 
@@ -68,6 +70,43 @@ nav {
   }
 }
 
+.clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.container {
+  margin-bottom: $unit;
+  .heading {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 2px solid $primary;
+    .title {
+      margin: $unit / 2 $unit;
+      float: left;
+      font-size: $unit * 2;
+    }
+    .subtitle {
+      margin: $unit * 3 / 2 $unit $unit / 2 $unit;
+      float: right;
+      font-size: $unit;
+    }
+  }
+  .content {
+    margin: $unit / 2 $unit;
+    text-align: justify;
+    .more {
+      float: left;
+    }
+    .date {
+      float: right;
+    }
+  }
+}
+
 footer {
   text-align: center;
 }
+
+@import "_syntax-highlighting";
