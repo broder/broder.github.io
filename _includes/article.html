@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="heading">
+        <h2 class="title">
+            {% if include.article.heading %}
+            {{ include.article.heading | escape }}
+            {% else %}
+            {{ include.article.title | escape }}
+            {% endif %}
+        </h2>
+
+        <h3 class="subtitle">{{ include.article.category }}</h3>
+    </div>
+
+    <div class="content">
+        {% if include.content %}
+        {% if include.article.image %}
+        <img src="{{ include.article.image }}"/>
+        {% endif %}
+
+        {{ include.content }}
+        {% else %}
+        {% if include.article.image %}
+        <img class="preview" src="{{ include.article.image }}"/>
+        {% endif %}
+
+        <p>
+            {% if include.article.excerpt %}
+            {{ include.article.excerpt | strip_html }}
+            {% else %}
+            {{ site.description }}
+            {% endif %}
+        </p>
+
+        <div class="more">
+            <a href="{{ include.article.url | relative_url }}">more<i class="fa fa-angle-right fa-fw fa-lg"></i></a>
+        </div>
+        {% endif %}
+
+        {% if include.article.date %}
+        <div class="date">{{ include.article.date | date: site.date_format }}</div>
+        {% endif %}
+
+        <div class="clearfix"></div>
+    </div>
+</div>

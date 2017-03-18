@@ -2,9 +2,12 @@
 title: Home
 id: home
 layout: default
+order: 1
 ---
 
-{% include about.html %}
+{% assign about_pages = site.pages | where: 'category', 'about' %}
+{% assign about_page = about_pages[0] %}
+{% include article.html article=about_page %}
 
 {% include posts.html posts=paginator.posts %}
 

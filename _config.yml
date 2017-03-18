@@ -16,9 +16,8 @@
 title: David Broder-Rodgers
 author: David Broder-Rodgers
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi, my name is David Broder-Rodgers and I'm a software developer. This site contains some
+  of the things I've made - hopefully there will be much more here in the future!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 paginate: 5
