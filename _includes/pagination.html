@@ -1,9 +1,9 @@
 {% if include.paginator.total_pages > 1 %}
 <div class="pagination">
     {% if include.paginator.previous_page %}
-    <a href="{{ include.paginator.previous_page_path }}"><i class="fa fa-angle-left fa-fw fa-lg"></i> prev</a>
+    <a href="{{ include.paginator.previous_page_path }}">{% icon fa-angle-left %} prev</a>
     {% else %}
-    <span class="disabled-link"><i class="fa fa-angle-left fa-fw fa-lg"></i> prev</span>
+    <span class="disabled-link">{% icon fa-angle-left %} prev</span>
     {% endif %}
 
     {% for page in (1..include.paginator.total_pages) %}
@@ -17,9 +17,9 @@
     {% endfor %}
 
     {% if include.paginator.next_page %}
-    <a href="{{ include.paginator.next_page_path }}">next <i class="fa fa-angle-right fa-fw fa-lg"></i></a>
+    <a href="{{ include.paginator.next_page_path }}">next {% icon fa-angle-right %}</a>
     {% else %}
-    <span class="disabled-link">next <i class="fa fa-angle-right fa-fw fa-lg"></i></span>
+    <span class="disabled-link">next {% icon fa-angle-right %}</span>
     {% endif %}
 </div>
 {% endif %}

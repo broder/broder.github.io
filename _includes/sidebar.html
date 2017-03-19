@@ -9,7 +9,11 @@
     {% unless added_pages contains p.id + ',' %}
     {% if p.title %}
     <a class="menu-item" href="{{ p.url | relative_url }}">
-        <i class="fa {% if page.id == p.id %}fa-angle-right{% endif %} fa-fw fa-lg"></i>
+        {% if page.id == p.id %}
+        {% icon fa-angle-right %}
+        {% else %}
+        {% icon %}
+        {% endif %}
         {{ p.title | downcase | escape }}
     </a>
     {% capture added_pages %}{{ added_pages }}{{ p.id }},{% endcapture %}
@@ -18,23 +22,23 @@
     {% endfor %}
 
     <a class="menu-item" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-        <i class="fa fa-facebook-square fa-fw fa-lg" aria-hidden="true"></i> facebook
+        {% icon fa-facebook-square %} facebook
     </a>
 
     <a class="menu-item" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-        <i class="fa fa-twitter-square fa-fw fa-lg" aria-hidden="true"></i> twitter
+        {% icon fa-twitter-square %} twitter
     </a>
 
     <a class="menu-item" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
-        <i class="fa fa-linkedin-square fa-fw fa-lg" aria-hidden="true"></i> linkedin
+        {% icon fa-linkedin-square %} linkedin
     </a>
 
     <a class="menu-item" href="https://github.com/{{ site.github_username }}" target="_blank">
-        <i class="fa fa-github-square fa-fw fa-lg" aria-hidden="true"></i> github
+        {% icon fa-github-square %} github
     </a>
 
     <a class="menu-item" href="https://steamcommunity.com/id/{{ site.steam_username }}" target="_blank">
-        <i class="fa fa-steam-square fa-fw fa-lg" aria-hidden="true"></i> steam
+        {% icon fa-steam-square %} steam
     </a>
 </nav>
 </header>
