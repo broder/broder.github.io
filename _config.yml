@@ -23,7 +23,13 @@ gems:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
+  - jekyll-minifier
 exclude:
   - deploy.sh
   - Gemfile
   - Gemfile.lock
+
+jekyll-minifier:
+  exclude:
+    - 'feed.xml'
+    - 'sitemap.xml'
