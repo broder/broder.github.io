@@ -2,7 +2,7 @@
 {% assign added_pages = '' %}
 
 <header>
-<img src="{{ "/assets/logo.png" | relative_url }}" />
+<img src="{{ '/assets/logo.png' | relative_url }}" />
 
 <nav>
     {% for p in pages %}
@@ -17,24 +17,24 @@
     {% endunless %}
     {% endfor %}
 
-    <a class="menu-item" href="https://facebook.com/{{site.facebook_username}}">
-        <i class="fa fa-facebook-square fa-fw fa-lg" aria-hidden="true"></i>facebook
+    <a class="menu-item" href="https://facebook.com/{{ site.facebook_username }}">
+        <i class="fa fa-facebook-square fa-fw fa-lg" aria-hidden="true"></i> facebook
     </a>
 
-    <a class="menu-item" href="https://twitter.com/{{site.twitter_username}}">
-        <i class="fa fa-twitter-square fa-fw fa-lg" aria-hidden="true"></i>twitter
+    <a class="menu-item" href="https://twitter.com/{{ site.twitter_username }}">
+        <i class="fa fa-twitter-square fa-fw fa-lg" aria-hidden="true"></i> twitter
     </a>
 
-    <a class="menu-item" href="https://linkedin.com/in/{{site.linkedin_username}}">
-        <i class="fa fa-linkedin-square fa-fw fa-lg" aria-hidden="true"></i>linkedin
+    <a class="menu-item" href="https://linkedin.com/in/{{ site.linkedin_username }}">
+        <i class="fa fa-linkedin-square fa-fw fa-lg" aria-hidden="true"></i> linkedin
     </a>
 
-    <a class="menu-item" href="{{site.github.owner_url}}">
-        <i class="fa fa-github-square fa-fw fa-lg" aria-hidden="true"></i>github
+    <a class="menu-item" href="{{ site.github.owner_url }}">
+        <i class="fa fa-github-square fa-fw fa-lg" aria-hidden="true"></i> github
     </a>
 
-    <a class="menu-item" href="https://steamcommunity.com/id/{{site.steam_username}}">
-        <i class="fa fa-steam-square fa-fw fa-lg" aria-hidden="true"></i>steam
+    <a class="menu-item" href="https://steamcommunity.com/id/{{ site.steam_username }}">
+        <i class="fa fa-steam-square fa-fw fa-lg" aria-hidden="true"></i> steam
     </a>
 </nav>
 </header>

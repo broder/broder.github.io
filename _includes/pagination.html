@@ -3,7 +3,7 @@
     {% if include.paginator.previous_page %}
     <a href="{{ include.paginator.previous_page_path }}"><i class="fa fa-angle-left fa-fw fa-lg"></i> prev</a>
     {% else %}
-    <span class="disabled-link"><i class="fa fa-angle-left fa-fw fa-lg"></i>prev</span>
+    <span class="disabled-link"><i class="fa fa-angle-left fa-fw fa-lg"></i> prev</span>
     {% endif %}
 
     {% for page in (1..include.paginator.total_pages) %}

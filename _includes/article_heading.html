@@ -1,0 +1,11 @@
+<div class="heading">
+    <h2 class="title">
+        {% if include.article.heading %}
+        {{ include.article.heading | escape }}
+        {% else %}
+        {{ include.article.title | escape }}
+        {% endif %}
+    </h2>
+
+    <h3 class="subtitle">{{ include.article.category }}</h3>
+</div>
