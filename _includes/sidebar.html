@@ -6,8 +6,8 @@
 
 <nav>
     {% for p in pages %}
+    {% if p.title and p.id %}
     {% unless added_pages contains p.id + ',' %}
-    {% if p.title %}
     <a class="menu-item" href="{{ p.url | relative_url }}">
         {% if page.id == p.id %}
         {% icon fa-angle-right %}
@@ -17,8 +17,8 @@
         {{ p.title | downcase | escape }}
     </a>
     {% capture added_pages %}{{ added_pages }}{{ p.id }},{% endcapture %}
-    {% endif %}
     {% endunless %}
+    {% endif %}
     {% endfor %}
 
     <a class="menu-item" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
