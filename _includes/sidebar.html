@@ -14,7 +14,7 @@
         {% else %}
         {% icon %}
         {% endif %}
-        {{ p.title | downcase | escape }}
+        {{ p.title | downcase }}
     </a>
     {% capture added_pages %}{{ added_pages }}{{ p.id }},{% endcapture %}
     {% endunless %}

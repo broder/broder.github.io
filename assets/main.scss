@@ -16,8 +16,12 @@ $unit: 15px;
 
 body {
   color: $primary;
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   font-size: $unit;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
 }
 
 .disabled-link, .selected-link, a {
@@ -132,11 +136,17 @@ main {
         margin: $unit 0;
       }
 
-      .more {
+      .more, .previous {
         float: left;
       }
-      .date {
+
+      .date, .next {
         float: right;
+      }
+
+      .next, .previous {
+        margin: $unit 0;
+
       }
     }
   }
