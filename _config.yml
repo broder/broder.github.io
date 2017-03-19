@@ -1,34 +1,19 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: David Broder-Rodgers
 author: David Broder-Rodgers
 description: >
   Hi, my name is David Broder-Rodgers and I'm a software developer. This site contains some
   of the things I've made - hopefully there will be much more here in the future!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://broder.github.io"
 paginate: 5
 paginate_path: "/:num/"
 date_format: "%b %-d, %Y"
 facebook_username: dbroderr
 twitter_username: dbroderr
 linkedin_username: broder
+github_username:  broder
+github_project:  broder.github.io
 steam_username:  broder
-
-repository: broder/broder.github.io
 
 # Build settings
 markdown: kramdown
@@ -39,5 +24,6 @@ gems:
   - jekyll-seo-tag
   - jemoji
 exclude:
+  - deploy.sh
   - Gemfile
   - Gemfile.lock
