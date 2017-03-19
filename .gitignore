@@ -2,7 +2,7 @@
 # Created by https://www.gitignore.io/api/ruby,rubymine,jekyll,macos
 
 ### Jekyll ###
-_site/
+#_site/
 .sass-cache/
 .jekyll-metadata
 
