@@ -4,16 +4,25 @@ description: >
   Hi, my name is David Broder-Rodgers and I'm a software developer. This site contains some
   of the things I've made - hopefully there will be much more here in the future!
 baseurl: ""
-url: "https://broder.github.io"
+url: https://broder.github.io
 paginate: 5
-paginate_path: "/:num/"
-date_format: "%b %-d, %Y"
+paginate_path: /:num/
+date_format: '%b %-d, %Y'
 facebook_username: dbroderr
 twitter_username: dbroderr
 linkedin_username: broder
 github_username:  broder
 github_project:  broder.github.io
 steam_username:  broder
+
+defaults:
+  - values:
+      layout: page
+
+jekyll-minifier:
+  exclude:
+    - feed.xml
+    - sitemap.xml
 
 # Build settings
 markdown: kramdown
@@ -22,14 +31,8 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jemoji
   - jekyll-minifier
 exclude:
   - deploy.sh
   - Gemfile
   - Gemfile.lock
-
-jekyll-minifier:
-  exclude:
-    - 'feed.xml'
-    - 'sitemap.xml'

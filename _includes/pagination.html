@@ -1,25 +1,39 @@
 {% if include.paginator.total_pages > 1 %}
 <div class="pagination">
     {% if include.paginator.previous_page %}
-    <a href="{{ include.paginator.previous_page_path }}">{% icon fa-angle-left %} prev</a>
+    <a href="{{ include.paginator.previous_page_path }}">
+        {% icon fa-angle-left %} prev
+    </a>
     {% else %}
-    <span class="disabled-link">{% icon fa-angle-left %} prev</span>
+    <span class="disabled-link">
+        {% icon fa-angle-left %} prev
+    </span>
     {% endif %}
 
     {% for page in (1..include.paginator.total_pages) %}
     {% if page == include.paginator.page %}
-    <span class="selected-link disabled-link">{{ page }}</span>
+    <span class="selected-link disabled-link">
+        {{ page }}
+    </span>
     {% elsif page == 1 %}
-    <a href="{{ site.paginate_path | replace: '/:num/', '/' }}">{{ page }}</a>
+    <a href="{{ site.paginate_path | replace: '/:num/', '/' }}">
+        {{ page }}
+    </a>
     {% else %}
-    <a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+    <a href="{{ site.paginate_path | replace: ':num', page }}">
+        {{ page }}
+    </a>
     {% endif %}
     {% endfor %}
 
     {% if include.paginator.next_page %}
-    <a href="{{ include.paginator.next_page_path }}">next {% icon fa-angle-right %}</a>
+    <a href="{{ include.paginator.next_page_path }}">
+        next {% icon fa-angle-right %}
+    </a>
     {% else %}
-    <span class="disabled-link">next {% icon fa-angle-right %}</span>
+    <span class="disabled-link">
+        next {% icon fa-angle-right %}
+    </span>
     {% endif %}
 </div>
 {% endif %}

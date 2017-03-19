@@ -7,6 +7,6 @@ git worktree add ./_site origin/master
 bundle exec jekyll build
 cd ./_site
 git add .
-git commit -m "Updated build to '$msg'"
+git commit -m "🚀 updated build to '$msg'"
 git push origin HEAD:master
 cd ..

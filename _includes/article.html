@@ -9,19 +9,25 @@
         {{ include.content }}
 
         {% if include.article.date %}
-        <div class="date">{{ include.article.date | date: site.date_format }}</div>
+        <div class="date">
+            {{ include.article.date | date: site.date_format }}
+        </div>
         {% endif %}
         <div class="clearfix"></div>
 
         {% if include.article.previous.url %}
         <div class="previous">
-            <a href="{{ include.article.previous.url }}">{% icon fa-angle-left %} {{ include.article.previous.title }}</a>
+            <a href="{{ include.article.previous.url }}">
+                {% icon fa-angle-left %} {{ include.article.previous.title }}
+            </a>
         </div>
         {% endif %}
 
         {% if include.article.next.url %}
         <div class="next">
-            <a href="{{ include.article.next.url }}">{{ include.article.next.title }} {% icon fa-angle-right %}</a>
+            <a href="{{ include.article.next.url }}">
+                {{ include.article.next.title }} {% icon fa-angle-right %}
+            </a>
         </div>
         {% endif %}
 

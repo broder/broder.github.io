@@ -2,7 +2,6 @@
 title: About
 heading: David Broder-Rodgers
 id: about
-layout: post
 category: about
 permalink: /about/
 order: 2

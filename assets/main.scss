@@ -121,7 +121,7 @@ main {
       margin: $unit;
       text-align: justify;
 
-      img {
+      img:not(.emoji) {
         display: block;
         width: 100%;
         object-fit: cover;
@@ -133,6 +133,7 @@ main {
       }
 
       p {
+        line-height: $unit * 4 / 3;
         margin: $unit 0;
       }
 

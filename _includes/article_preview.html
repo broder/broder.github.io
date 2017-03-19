@@ -15,11 +15,15 @@
         </p>
 
         <div class="more">
-            <a href="{{ include.article.url | relative_url }}">more {% icon fa-angle-right %}</a>
+            <a href="{{ include.article.url | relative_url }}">
+                more {% icon fa-angle-right %}
+            </a>
         </div>
 
         {% if include.article.date %}
-        <div class="date">{{ include.article.date | date: site.date_format }}</div>
+        <div class="date">
+            {{ include.article.date | date: site.date_format }}
+        </div>
         {% endif %}
 
         <div class="clearfix"></div>

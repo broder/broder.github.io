@@ -1,5 +1,4 @@
 ---
-layout:   post
 title:    "Test Post 3"
 date:     2017-02-14 22:15:42 +0000
 image:    /assets/test.jpg

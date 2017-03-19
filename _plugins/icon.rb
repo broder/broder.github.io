@@ -3,7 +3,7 @@ module Jekyll
     class Icon < Liquid::Tag
       class << self
         def tag_name
-          self.name.split("::").last.downcase
+          name.split("::").last.downcase
         end
       end
 
