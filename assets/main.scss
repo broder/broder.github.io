@@ -121,7 +121,7 @@ main {
       margin: $unit;
       text-align: justify;
 
-      img:not(.emoji) {
+      img {
         display: block;
         width: 100%;
         object-fit: cover;
@@ -135,6 +135,28 @@ main {
       p {
         line-height: $unit * 4 / 3;
         margin: $unit 0;
+      }
+
+      .video {
+        position: relative;
+        padding-top: $unit;
+        height: 0;
+
+        &.w2h1 {
+          padding-bottom: 50%;
+        }
+
+        &.w16h9 {
+          padding-bottom: 56.25%;
+        }
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
       }
 
       .more, .previous {
