@@ -4,11 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-        {% unless page.id == 'home' %}
         {{ page.title | escape }} | {{ site.title | escape }}
-        {% else %}
-        {{ site.title | escape }}
-        {% endunless %}
     </title>
     {% seo title=false %}
 
@@ -21,7 +17,7 @@
     <script>
         window.onload = function () {
             new Blazy({
-                selector: 'img,iframe'
+                selector: 'main img,main iframe'
             });
         };
     </script>

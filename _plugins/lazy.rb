@@ -3,50 +3,54 @@ module Jekyll
     class Lazy < Liquid::Tag
       class << self
         def tag_name
-          name.split("::").last(2).join('_').downcase
+          name.split('::').last(2).join('_').downcase
         end
       end
 
-      def initialize(tag_name, input, tokens)
+      def initialize(tag_name, markup, tokens)
         super
 
-        @input = input
+        @options = parse_options markup.strip
       end
 
       def attrs_to_html(attrs)
         attrs.map { |k, v| "#{k}=\"#{v}\"" }.join(' ')
       end
 
+      private
+
+      def parse_options(markup)
+        opts = {}
+        markup.split(',').each do |opt|
+          split = opt.split ':'
+          opts[split.first.strip.to_sym] = split.last.strip
+        end
+        opts
+      end
+
       class Image < Lazy
         def render(context)
-          attrs = parse_attrs @input, context
-          attrs[:src] = context.registers[:site].config['placeholder_image']
+          attrs = {
+            :'data-src' => context[@options[:src]] || @options[:src],
+            src: context.registers[:site].config['placeholder_image'],
+            alt: context[@options[:alt]] || @options[:alt]
+          }
+          attrs[:class] = @options[:class] if @options[:class]
           "<img #{attrs_to_html attrs}/>"
-        end
-
-        private
-
-        def parse_attrs(input, context)
-          split_input = input.split
-          attrs = {}
-          src = split_input.shift
-          attrs[:'data-src'] = context[src] || src
-          attrs[:class] = split_input.join ' ' if split_input.any?
-          attrs
         end
       end
 
       class YouTube < Lazy
         def render(context)
-          split_input = @input.split
+          iframe_attrs = {
+            :'data-src' => "https://www.youtube.com/embed/#{@options[:id]}?controls=0&showinfo=0&rel=0&autoplay=1",
+            title: context[@options[:title]] || @options[:title],
+            frameborder: '0'
+          }
 
-          iframe_attrs = {}
-          yt_id = split_input.shift
-          iframe_attrs[:'data-src'] = "https://www.youtube.com/embed/#{yt_id}?controls=0&showinfo=0&rel=0&autoplay=1"
-          iframe_attrs[:frameborder] = '0'
-
-          div_attrs = {}
-          div_attrs[:class] = split_input.any? ? "yt #{split_input.join ' '}" : 'yt'
+          div_attrs = {
+            class: @options[:class] ? "yt #{@options[:class]}" : 'yt'
+          }
 
           "<div #{attrs_to_html div_attrs}><iframe #{attrs_to_html iframe_attrs}></iframe></div>"
         end

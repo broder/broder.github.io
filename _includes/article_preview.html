@@ -3,7 +3,7 @@
 
     <div class="content">
         {% if include.article.image %}
-        {% lazy_image include.article.image preview %}
+        {% lazy_image alt: include.article.title, src: include.article.image, class: preview %}
         {% endif %}
 
         <p>

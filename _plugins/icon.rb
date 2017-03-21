@@ -3,7 +3,7 @@ module Jekyll
     class Icon < Liquid::Tag
       class << self
         def tag_name
-          name.split("::").last.downcase
+          name.split('::').last.downcase
         end
       end
 
@@ -14,7 +14,7 @@ module Jekyll
       end
 
       def render(context)
-        "<i class=\"fa fa-fw fa-lg #{@icon}\"></i>"
+        "<i class=\"fa fa-fw fa-lg #{@icon}\" aria-hidden=\"true\"></i>"
       end
     end
   end
