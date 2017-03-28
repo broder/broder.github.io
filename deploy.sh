@@ -5,7 +5,7 @@ git checkout origin/master
 cd ..
 
 msg=$(git log --oneline -1 | cat)
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build
 
 cd ./_site
 git add .

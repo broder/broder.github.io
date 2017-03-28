@@ -4,7 +4,7 @@ description: >
   Hi, my name is David Broder-Rodgers and I'm a software developer. This site contains some
   of the things I've made - hopefully there will be much more here in the future!
 baseurl: ""
-url: https://broder.github.io
+url: https://djbr.uk
 permalink: /:year/:month/:day/:title.html
 paginate: 5
 paginate_path: /:num/
@@ -16,6 +16,7 @@ github_username: broder
 github_project: broder.github.io
 steam_username: broder
 placeholder_image: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
+google_analytics: UA-37851343-2
 
 defaults:
   - values:
