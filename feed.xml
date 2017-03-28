@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="https://djbr.uk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://djbr.uk/" rel="alternate" type="text/html" /><updated>2017-03-28T20:56:34+01:00</updated><id>https://djbr.uk/</id><title type="html">David Broder-Rodgers</title><subtitle>Hi, my name is David Broder-Rodgers and I'm a software developer. This site contains some of the things I've made - hopefully there will be much more here in the future!
+</subtitle><author><name>David Broder-Rodgers</name></author><entry><title type="html">Synergy</title><link href="https://djbr.uk/2017/03/19/synergy.html" rel="alternate" type="text/html" title="Synergy" /><published>2017-03-19T20:00:00+00:00</published><updated>2017-03-19T20:00:00+00:00</updated><id>https://djbr.uk/2017/03/19/synergy</id><content type="html" xml:base="https://djbr.uk/2017/03/19/synergy.html">&lt;p&gt;As part of my Masters degree, I was involved in research into the mathematical modelling of how an infection spreads
+within a network of nodes.&lt;/p&gt;
+
+&lt;p&gt;Specifically, I was investigating how the probability of an epidemic changes when the regular network undergoes rewiring
+to increase randomness.
+Computer simulations were used extensively in order to highlight any interesting effects and back up any mathematical
+models produced.
+The real world applications of epidemiology obviously include finding ways to inhibit spreading of disease but it can
+also be used to model how social trends spread such as rumours or opinions.&lt;/p&gt;
+
+&lt;p&gt;Below I’ve given a brief description of some important terminology:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Network:&lt;/em&gt; a network (or graph) refers to a collection of nodes (or vertices), some of which are connected by bonds (or 
+edges).
+One example is a regular square lattice, which was the primary subject of investigation.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Rewiring:&lt;/em&gt; this involves breaking some of the regular bonds and replacing them with connections to other random nodes 
+in the network.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;SIR model:&lt;/em&gt; this model refers to the states that the nodes can be in: 
+Susceptible to infection, Infected and capable of passing infection to Susceptible nodes, and Recovered and unable to be
+infected again.
+In the image above and videos below, the grey nodes are Susceptible, red are Infected and black are Recovered.
+Most of the investigations were carried out for SIR systems.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;I-r synergy:&lt;/em&gt; Infected-recipient synergy is where the probability of infection of a neighbouring node is affected by 
+other neighbouring infected nodes.
+This synergy can be constructive, where having other neighbouring infected nodes increases the probability of infection,
+or destructive, where other neighbouring infected nodes decrease the chance of infection.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Epidemic:&lt;/em&gt; an epidemic occurs when the entire network is Infected (or Recovered) at the end of the infection.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The main findings were as follows.
+For destructive I-r synergy, increasing the amount of rewiring within the network leads to systems which are less 
+resilient to epidemics:&lt;/p&gt;
+
+&lt;div class=&quot;yt w2h1&quot;&gt;&lt;iframe data-src=&quot;https://www.youtube.com/embed/OpjKLljfZ1w?controls=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autoplay=1&quot; title=&quot;Destructive Synergy&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;This simulation shows the spread of infection with destructive I-r synergy.
+The left panel shows a regular square lattice whilst the right panel shows a lattice which has undergone 10% rewiring.
+The rewired system is more susceptible to infection as rewiring increases the likelihood of the infection spreading to a
+non-infected area where the destructive synergy is weakest.&lt;/p&gt;
+
+&lt;p&gt;Interestingly, for highly constructive I-r synergy, the increasing randomness caused by rewiring actually hinders the 
+spread of disease and results in a relatively higher resilience to epidemics:&lt;/p&gt;
+
+&lt;div class=&quot;yt w2h1&quot;&gt;&lt;iframe data-src=&quot;https://www.youtube.com/embed/nhpY-0MMS6o?controls=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autoplay=1&quot; title=&quot;Constructive Synergy&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;This simulation shows the spread of infection with constructive I-r synergy.
+The left panel shows a regular square lattice whilst the right panel shows a lattice which has undergone 10% rewiring.
+The rewired system is less susceptible to infection as rewiring decreases the likelihood of the infection spreading to 
+an infected area where the constructive synergy is strongest.&lt;/p&gt;
+
+&lt;p&gt;The simulations were carried out by a C++ application using &lt;a href=&quot;https://en.wikipedia.org/wiki/Kinetic_Monte_Carlo&quot;&gt;kinetic monte carlo&lt;/a&gt; techniques.
+OpenCV was used to produce some graphing and the video outputs seen above.
+To produce reliable data points with low errors, several tens of thousands of simulations were carried out for each set 
+of input parameters.
+Supercomputers within &lt;a href=&quot;http://www.ch.cam.ac.uk/computing/&quot;&gt;University of Cambridge’s Chemistry department&lt;/a&gt; were utilised for several months to 
+complete these runs.&lt;/p&gt;
+
+&lt;p&gt;Results from this project were published in &lt;a href=&quot;https://journals.aps.org/pre/abstract/10.1103/PhysRevE.92.062814&quot;&gt;Physical Review Letters.&lt;/a&gt;&lt;/p&gt;</content><author><name>David Broder-Rodgers</name></author><category term="project" /><summary type="html">As part of my Masters degree, I was involved in research into the mathematical modelling of how an infection spreads within a network of nodes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://djbr.uk/assets/synergy.png" /></entry><entry><title type="html">New Website</title><link href="https://djbr.uk/2017/03/19/new-site.html" rel="alternate" type="text/html" title="New Website" /><published>2017-03-19T14:15:00+00:00</published><updated>2017-03-19T14:15:00+00:00</updated><id>https://djbr.uk/2017/03/19/new-site</id><content type="html" xml:base="https://djbr.uk/2017/03/19/new-site.html">&lt;p&gt;I’ve updated my website. 🎉&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://web.archive.org/web/20170319144554/https://dbroder.eu/&quot; target=&quot;_blank&quot;&gt;old site&lt;/a&gt; was made with hand-rolled, static HTML, CSS and JS which was hosted on a VPS.
+This new site is still static but this time it’s being generated by &lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll.&lt;/a&gt;
+The look and feel is similar to my old site but, with the help of Jekyll, the site should act like more of a blog going 
+forwards.
+Using a generator should also make maintaining and updating the site easier going forwards.
+Examples of some other useful features are using SCSS for styling, Markdown for writing posts and pages and Ruby for any
+additional functionality I need.&lt;/p&gt;
+
+&lt;p&gt;Another major change I’ve made is to use &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;GitHub Pages&lt;/a&gt; and 
+&lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;_blank&quot;&gt;Cloudflare&lt;/a&gt; for hosting which means that the source for this site is 
+&lt;a href=&quot;https://github.com/broder/broder.github.io&quot; target=&quot;_blank&quot;&gt;visible on GitHub.&lt;/a&gt;
+Initially I was planning on using
+&lt;a href=&quot;https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/&quot; target=&quot;_blank&quot;&gt;GitHub’s default implementation for hosting Jekyll pages&lt;/a&gt; but after spending a 
+little more time with Jekyll, I felt that having the ability to create custom plugins (and use those not on 
+&lt;a href=&quot;https://github.com/github/pages-gem/blob/master/lib/github-pages/plugins.rb#L19&quot; target=&quot;_blank&quot;&gt;GitHub’s approved list&lt;/a&gt;, e.g. 
+&lt;a href=&quot;https://github.com/digitalsparky/jekyll-minifier&quot; target=&quot;_blank&quot;&gt;jekyll-minifier&lt;/a&gt;) was a big plus.
+In order to get around this, I need to store the source code on a non-master branch, build the site locally and then 
+push the output to master.
+&lt;a href=&quot;https://git-scm.com/docs/git-worktree&quot; target=&quot;_blank&quot;&gt;Git worktrees&lt;/a&gt; provided a nifty was to do this, the result of which can be seen in 
+&lt;a href=&quot;https://github.com/broder/broder.github.io/blob/src/deploy.sh&quot; target=&quot;_blank&quot;&gt;deploy.sh.&lt;/a&gt;&lt;/p&gt;</content><author><name>David Broder-Rodgers</name></author><category term="post" /><summary type="html">I’ve updated my website. 🎉</summary></entry></feed>
