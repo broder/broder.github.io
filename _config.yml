@@ -17,6 +17,8 @@ github_project: broder.github.io
 steam_username: broder
 placeholder_image: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
 google_analytics: UA-37851343-2
+disqus:
+    shortname: dbr-1
 
 defaults:
   - values:
@@ -36,6 +38,8 @@ gems:
   - jekyll-seo-tag
   - jekyll-minifier
 exclude:
+  - .gitignore
   - deploy.sh
   - Gemfile
   - Gemfile.lock
+  - README.md
