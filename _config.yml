@@ -32,10 +32,10 @@ jekyll-minifier:
 markdown: kramdown
 gems:
   - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
   - jekyll-minifier
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - .gitignore
   - deploy.sh

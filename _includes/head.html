@@ -6,23 +6,28 @@
     <title>
         {{ page.title | escape }} | {{ site.title | escape }}
     </title>
+
     {% seo title=false %}
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:medium,bold" rel="stylesheet">
+    {% if page.date %}
+    <link rel="amphtml" href="{{ page.url | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:medium,bold">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
-    <script src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
     <script>
         window.onload = function () {
             new Blazy({
-                selector: 'main img,main iframe'
+                selector: 'header img,main img,main iframe'
             });
         };
     </script>
 
     {% feed_meta %}
 
-    {% include google-analytics.html %}
+    {% include google_analytics.html %}
 </head>

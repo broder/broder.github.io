@@ -2,7 +2,7 @@
 {% assign added_pages = '' %}
 
 <header>
-<img src="{{ '/assets/logo.png' | relative_url }}" alt="DBR" />
+{% lazy_image alt: DBR, src: /assets/logo.png %}
 
 <nav>
     {% for p in pages %}

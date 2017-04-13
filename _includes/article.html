@@ -6,7 +6,11 @@
         {% lazy_image alt: include.article.title, src: include.article.image %}
         {% endif %}
 
+        {% if include.article.amp %}
+        {{ include.content | markdownify }}
+        {% else %}
         {{ include.content }}
+        {% endif %}
 
         {% if include.article.date %}
         <div class="date">

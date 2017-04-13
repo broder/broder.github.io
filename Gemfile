@@ -1,14 +1,16 @@
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
-gem 'jekyll', '~>3.4.0'
+gem 'fastimage'
+gem 'jekyll'
+gem 'nokogiri'
 
 group :jekyll_plugins do
   gem 'jekyll-feed'
-  gem 'jekyll-paginate'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-seo-tag'
   gem 'jekyll-minifier'
+  gem 'jekyll-paginate'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

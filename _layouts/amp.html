@@ -1,0 +1,27 @@
+---
+layout: amp
+---
+<!doctype html>
+<html ⚡ lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{% include amp_head.html %}
+
+<body>
+
+{% include amp_google_analytics.html %}
+
+{% capture sidebar %}{% include sidebar.html %}{% endcapture %}
+{{ sidebar | ampify }}
+
+<main>
+    {% capture article %}
+    {% include article.html article = page content = content %}
+    {% endcapture %}
+    {{ article | ampify }}
+</main>
+
+{% capture footer %}{% include footer.html %}{% endcapture %}
+{{ footer | ampify }}
+
+</body>
+</html>
