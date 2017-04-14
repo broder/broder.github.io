@@ -1,0 +1,37 @@
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  color: $primary;
+  font-family: $font-family;
+  font-size: $unit;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+.disabled-link, .selected-link, a {
+  color: $primary;
+  text-decoration: none;
+  font-weight: bold;
+  padding: $unit / 4 $unit / 2;
+}
+
+.selected-link, a:hover {
+  color: $secondary;
+  background: $primary;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

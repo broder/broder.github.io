@@ -1,0 +1,29 @@
+header {
+  top: 0;
+
+  @media #{$large-screen} {
+    position: fixed;
+    width: $unit * 20;
+    margin: $unit;
+  }
+
+  @media #{$small-screen} {
+    width: 100%;
+    margin: $unit 0;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav {
+    margin: $unit auto;
+    max-width: $unit * 10;
+
+    .menu-item {
+      display: block;
+      padding: $unit / 2;
+    }
+  }
+}
