@@ -4,6 +4,7 @@ ruby RUBY_VERSION
 gem 'fastimage'
 gem 'jekyll'
 gem 'nokogiri'
+gem 'rake'
 
 group :jekyll_plugins do
   gem 'jekyll-feed'
@@ -13,4 +14,9 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :test do
+  gem 'html-proofer'
+  gem 'rubocop'
+end
+
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

@@ -38,7 +38,10 @@ gems:
   - jekyll-sitemap
 exclude:
   - .gitignore
-  - deploy.sh
+  - .rubocop.yml
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - package.json
+  - Rakefile
   - README.md

@@ -13,7 +13,7 @@ module Jekyll
         @icon = icon.strip
       end
 
-      def render(context)
+      def render(_context)
         "<i class=\"fa fa-fw fa-lg #{@icon}\" aria-hidden=\"true\"></i>"
       end
     end

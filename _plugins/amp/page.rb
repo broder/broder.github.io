@@ -7,15 +7,15 @@ module Jekyll
         @dir = 'amp'
         @name = "#{page.id}.html"
 
-        self.process(@name)
-        self.read_yaml(File.join(base, '_layouts'), 'amp.html')
+        process(@name)
+        read_yaml(File.join(base, '_layouts'), 'amp.html')
 
         self.content = page.content
 
-        self.data = page.data.merge self.data
+        self.data = page.data.merge data
 
-        self.data['canonical_url'] = page.url
-        self.data['amp'] = true
+        data['canonical_url'] = page.url
+        data['amp'] = true
       end
     end
   end

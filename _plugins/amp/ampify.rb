@@ -43,7 +43,7 @@ module Jekyll
           yt['width'] = 1280
           yt['height'] = 720
 
-          yt_params = /embed\/.*$/.match(yt.children.first.attributes['data-src'])
+          yt_params = %r{embed\/.*$}.match(yt.children.first.attributes['data-src'])
           split_yt_params = yt_params.to_s.split '?'
 
           yt['data-videoid'] = split_yt_params.first.sub 'embed/', ''
