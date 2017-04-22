@@ -1,0 +1,18 @@
+{% lazy_image id: logo, alt: DBR, src: /assets/logos/default.png %}
+{% unless page.amp %}
+<script>
+    setTimeout(function () {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open('GET', '/assets/logos/index.json', true);
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                var logos = JSON.parse(this.responseText);
+                var randomLogo = logos[Math.floor(Math.random() * logos.length)];
+                document.getElementById('logo').src = document.getElementById('logo').src
+                    .replace(/\/[^\/]*\.png/, '/' + randomLogo + '.png');
+            }
+        };
+        xhttp.send();
+    }, 10000);
+</script>
+{% endunless %}

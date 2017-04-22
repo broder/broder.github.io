@@ -24,3 +24,6 @@ Add a new `.md` file in `_posts/` using existing posts as examples.
 
 ## Deployment
 Run `bundle exec rake deploy`.
+
+## Generating logos
+Run `bundle exec rake generate_logos` (you may need to install some extra dependencies as described in `logos/README.md`).

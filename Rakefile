@@ -47,3 +47,10 @@ task deploy: %w[clean build] do
   `cd #{build_folder} && git commit -m "🚀 updated build to '#{msg}'"`
   `cd #{build_folder} && git push origin HEAD:master`
 end
+
+task :generate_logos do
+  `git submodule init`
+  `git submodule update`
+  `cd logos && npm i`
+  `cd logos && npm run export -- --outDir ../assets/logos`
+end

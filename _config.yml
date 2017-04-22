@@ -41,6 +41,7 @@ exclude:
   - .rubocop.yml
   - Gemfile
   - Gemfile.lock
+  - logos
   - node_modules
   - package.json
   - Rakefile

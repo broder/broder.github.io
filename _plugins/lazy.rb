@@ -38,22 +38,30 @@ module Jekyll
             alt: context[@options[:alt]] || @options[:alt]
           }
 
-          src = if attrs[:'data-src'].start_with? 'http'
-                  attrs[:'data-src']
-                else
-                  File.join(Dir.pwd, attrs[:'data-src'])
-                end
+          src = get_image_location attrs[:'data-src']
 
-          begin
-            size = FastImage.size(src)
-            attrs[:width] = size[0]
-            attrs[:height] = size[1]
-          rescue StandardError => _
-            puts "Unable to get image dimensions for '#{src}'."
-          end
+          attrs = attrs.merge get_image_dimensions(src)
 
+          attrs[:id] = @options[:id] if @options[:id]
           attrs[:class] = @options[:class] if @options[:class]
           "<img #{attrs_to_html attrs}/>"
+        end
+
+        private
+
+        def get_image_location(data_src)
+          data_src.start_with?('http') ? data_src : File.join(Dir.pwd, data_src)
+        end
+
+        def get_image_dimensions(src)
+          size = FastImage.size(src)
+          {
+            width: size[0],
+            height: size[1]
+          }
+        rescue StandardError => _
+          puts "Unable to get image dimensions for '#{src}'."
+          {}
         end
       end
 
