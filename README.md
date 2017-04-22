@@ -1,8 +1,11 @@
 # broder.github.io
 ## Requirements
+### Required
 * Ruby
-* Node.js
 * Bundler (`gem install bundler`)
+
+### Optional
+* Node.js (for test dependencies)
 
 ## Setup
 1. Clone the repository.

@@ -1,9 +1,9 @@
 {
-  "name": "broder.github.io",
+  "name": "broder.github.io test dependencies",
   "version": "1.0.0",
   "devDependencies": {
-    "amphtml-validator": "^1.0.20",
-    "pa11y": "^4.9.0"
+    "amphtml-validator": "latest",
+    "pa11y": "latest"
   },
   "repository": {
     "type": "git",
