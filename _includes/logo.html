@@ -1,3 +1,6 @@
+{% if page.logo %}
+{% lazy_image id: logo, alt: DBR, src: page.logo %}
+{% else %}
 {% lazy_image id: logo, alt: DBR, src: /assets/logos/default.png %}
 {% unless page.amp %}
 <script>
@@ -16,3 +19,4 @@
     }, 10000);
 </script>
 {% endunless %}
+{% endif %}
