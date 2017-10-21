@@ -1,5 +1,5 @@
 {
-  "name": "broder.github.io test dependencies",
+  "name": "broder.github.io-test-deps",
   "version": "1.0.0",
   "devDependencies": {
     "amphtml-validator": "latest",
