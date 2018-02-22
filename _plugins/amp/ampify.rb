@@ -18,7 +18,7 @@ module Jekyll
         doc.css('img').each do |image|
           image.name = 'amp-img'
 
-          image['class'].sub! 'b-lazy', '' if image['class']
+          image['class']&.sub! 'b-lazy', ''
           image['src'] = image['data-src']
           image['layout'] = 'responsive'
           image.delete 'data-src'

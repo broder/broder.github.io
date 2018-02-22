@@ -33,7 +33,7 @@ module Jekyll
       class Image < Lazy
         def render(context)
           attrs = {
-            :'data-src' => context[@options[:src]] || @options[:src],
+            'data-src': context[@options[:src]] || @options[:src],
             src: context.registers[:site].config['placeholder_image'],
             alt: context[@options[:alt]] || @options[:alt]
           }
@@ -68,7 +68,7 @@ module Jekyll
       class YouTube < Lazy
         def render(context)
           iframe_attrs = {
-            :'data-src' => "https://www.youtube.com/embed/#{@options[:id]}?controls=0&showinfo=0&rel=0&autoplay=1",
+            'data-src': "https://www.youtube.com/embed/#{@options[:id]}?controls=0&showinfo=0&rel=0&autoplay=1",
             title: context[@options[:title]] || @options[:title],
             frameborder: '0'
           }

@@ -30,7 +30,7 @@ jekyll-minifier:
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-minifier
   - jekyll-paginate

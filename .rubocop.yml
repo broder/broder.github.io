@@ -8,3 +8,5 @@ Metrics/MethodLength:
   Max: 20
 Style/RescueModifier:
   Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false

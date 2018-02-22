@@ -24,6 +24,28 @@ rapidly adopt the technologies and contribute quickly and substantially. This le
 months of joining. More recently, I've been involved in validating business ideas by creating and iterating
 multiple prototype apps. Below are some of the projects which I've worked on:
 
+### Dashboard for Vivacity Labs
+
+I led a team of two junior developers to create an MVP dashboard website which processes a large amount of realtime
+data into digestable formats and statistics.
+
+_Technologies:_
+Node.js, TypeScript, React, Redux, Webpack, Google Cloud Platform
+
+### Performance Tables Discovery for Department for Education
+
+We provided consultancy services to document a large existing system from an incumbent provider and identify pain points
+for current users. Our final deliverables also included an idealised technical architecture and various roadmaps to
+achieving this future perfect.
+
+### Website & Mobile App for Air Charter Services
+
+I helped to develop a hybrid website and mobile app running with Cordova which involved full-stack development and
+updating open source libraries.
+
+_Technologies:_
+Node.js, TypeScript, React, Redux, Webpack, Cordova, OneSignal, C#, ASP.NET MVC, AWS
+
 ### 3D Scanning App Prototype
 
 Over the course of four weeks, I developed an app to utilise the [Structure sensor][structure] to capture 3D scans and
@@ -40,7 +62,7 @@ to an MVP.
 _Technologies:_
 Node.js, React, Redux, Webpack, Cordova, OneSignal, Auth0, HockeyApp, AWS
 
-### Mobile apps for Lloyds Banking Group
+### Mobile Apps for Lloyds Banking Group
 
 We were brought in along with [Wipro Digital][wipro-digital] to digitally transform LBG, taking them towards a more
 agile way of working. The transformation aspects included interviewing new developers for the Mobile theme and providing
@@ -89,7 +111,8 @@ Bootstrap, Express, Heroku, Jade, jQuery, Mailgun, Mocha, Node.js, PostgreSQL, T
 
 ### Responsive Website Redesign for UIA
 
-I modified [an existing website][uia] to improve responsiveness for mobile devices.
+I modified [an existing website][uia] to improve responsiveness for mobile devices. The required development was 
+initially estimated at 50 days but I completed it within a week.
 
 _Technologies:_
 CSS, HTML, Java, Tomcat
@@ -177,7 +200,7 @@ C#, .NET, xUnit
 
 ### Salesforce Android app
 
-I assisted development of an showcase [Android app][sf-app] which was designed to allow offline recording of sales data
+I assisted development of a showcase [Android app][sf-app] which was designed to allow offline recording of sales data
 which would then synchronise to a Salesforce system.
 
 _Technologies:_
@@ -188,8 +211,13 @@ Android, Java
 
 ## Open Source contributions
 
-I've participated in [24 Pull Requests][24pr] for the last couple of years as well as contributing to some popular
-repositories such as [jQuery][jquery], [Homebrew][brew], [DefinitelyTyped][dt] and [webdriver.io][wdio].
+I've participated in [24 Pull Requests][24pr] and [Hacktoberfest][hacktoberfest] for the last couple of years as well
+as contributing to some popular repositories such as [jQuery][jquery], [Homebrew][brew], [DefinitelyTyped][dt] and
+[webdriver.io][wdio].
+
+## Mentoring
+
+I have mentored several more junior developers and regularly volunteer at local Code Club sessions.
 
 ## Shop Assistant for Age UK
 _From August 2008 until September 2011_
@@ -252,9 +280,9 @@ English Language: A; English Literature: A; Religious Studies: A -->
 
 ## Certifications
 
+* Level 5 Diploma in Leadership and Management *(in progress)*
 * Professional Scrum Master I
-* MCSA: Web applications - Programming in C# (70-483), Developing ASP.NET MVC Web Applications (70-486); (working
-  towards MCSD: App Builder as well)
+* MCSA: Web applications - Programming in C# (70-483), Developing ASP.NET MVC Web Applications (70-486)
 
 
 [sw]: https://www.softwire.com/
