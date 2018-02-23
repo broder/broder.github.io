@@ -1,8 +1,9 @@
 <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
 
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
@@ -11,7 +12,7 @@
         {{ page.title | escape }} | {{ site.title | escape }}
     </title>
 
-    <link rel="canonical" href="{{ page.canonical_url  | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.canonical_url | absolute_url }}">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

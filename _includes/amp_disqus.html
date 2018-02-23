@@ -1,0 +1,9 @@
+{% if jekyll.environment == 'production' and page.comments != false %}
+<amp-iframe width=600 height=140
+            layout="responsive"
+            sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+            resizable
+            src="{{ site.disqus.amp_url }}?url={{ page.canonical_url | absolute_url }}&identifier={{ page.canonical_url }}">
+    <div overflow></div>
+</amp-iframe>
+{% endif %}

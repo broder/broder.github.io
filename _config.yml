@@ -18,6 +18,7 @@ placeholder_image: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAA
 google_analytics: UA-37851343-2
 disqus:
     shortname: dbr-1
+    amp_url: https://amp.djbr.uk
 
 defaults:
   - values:

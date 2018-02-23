@@ -13,7 +13,7 @@
     {% feed_meta %}
 
     {% if page.date %}
-    <link rel="amphtml" href="{{ page.url | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="amphtml" href="{{ page.url | prepend: '/amp' | absolute_url }}">
     {% endif %}
 
 

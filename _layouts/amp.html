@@ -18,6 +18,8 @@ layout: amp
     {% include article.html article = page content = content %}
     {% endcapture %}
     {{ article | ampify }}
+
+    {% include amp_disqus.html %}
 </main>
 
 {% capture footer %}{% include footer.html %}{% endcapture %}
