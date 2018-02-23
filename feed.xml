@@ -1,5 +1,179 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://djbr.uk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://djbr.uk/" rel="alternate" type="text/html" /><updated>2017-10-30T19:21:30+00:00</updated><id>https://djbr.uk/</id><title type="html">David Broder-Rodgers</title><subtitle>Hi, my name is David Broder-Rodgers and I'm a software developer based in London. This site contains some of the things I've done - hopefully there will be much more here in the future!
-</subtitle><author><name>David Broder-Rodgers</name></author><entry><title type="html">Synergy</title><link href="https://djbr.uk/2017/03/19/synergy.html" rel="alternate" type="text/html" title="Synergy" /><published>2017-03-19T20:00:00+00:00</published><updated>2017-03-19T20:00:00+00:00</updated><id>https://djbr.uk/2017/03/19/synergy</id><content type="html" xml:base="https://djbr.uk/2017/03/19/synergy.html">&lt;p&gt;As part of my Masters degree, I was involved in research into the mathematical modelling of how an infection spreads
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="https://djbr.uk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://djbr.uk/" rel="alternate" type="text/html" /><updated>2018-02-23T08:40:58+00:00</updated><id>https://djbr.uk/</id><title type="html">David Broder-Rodgers</title><subtitle>Hi, my name is David Broder-Rodgers and I'm a software developer based in London. This site contains some of the things I've done - hopefully there will be much more here in the future!
+</subtitle><author><name>David Broder-Rodgers</name></author><entry><title type="html">Continuous Lifecycle Conference 2017</title><link href="https://djbr.uk/2017/05/29/continous-lifecycle.html" rel="alternate" type="text/html" title="Continuous Lifecycle Conference 2017" /><published>2017-05-29T21:00:00+01:00</published><updated>2017-05-29T21:00:00+01:00</updated><id>https://djbr.uk/2017/05/29/continous-lifecycle</id><content type="html" xml:base="https://djbr.uk/2017/05/29/continous-lifecycle.html">&lt;p&gt;A couple of weeks ago, I went to the second day of &lt;a href=&quot;https://2017.continuouslifecycle.london/&quot;&gt;Continuous Lifecycle&lt;/a&gt;, a conference about all things Continuous Delivery, Continuous Integration and Continuous &amp;lt;insert word here&amp;gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ve written up some notes of the talks that I went to below - hopefully you might find some of them useful / interesting and sorry if any of them aren’t clear.
+I thought the conference was good overall and fairly well organised.
+I’d recommend it to anyone interested in DevOps stuff!&lt;/p&gt;
+
+&lt;h2 id=&quot;a-culture-of-openness-by-jen-krieger---chief-agile-architect-at-redhat&quot;&gt;&lt;a href=&quot;https://2017.continuouslifecycle.london/sessions/keynote-2/&quot;&gt;A Culture of Openness&lt;/a&gt; by Jen Krieger - “Chief Agile Architect” at Redhat&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;She talked about Redhat trying to move to an agile way of working but how it wasn’t successful to start with.&lt;/li&gt;
+  &lt;li&gt;She mentioned a project which took 18 months rather than the estimated 6 months due to a communication divide between the managers / stakeholders and the devs.&lt;/li&gt;
+  &lt;li&gt;The key issues leading to the divide (and failure) were: No Visibility =&amp;gt; Assumptions =&amp;gt; Blame =&amp;gt; Silos =&amp;gt; No Visibility and so on.&lt;/li&gt;
+  &lt;li&gt;The correct approach is: Transparency =&amp;gt; Open-Minded =&amp;gt; Responsibility =&amp;gt; Team-oriented.&lt;/li&gt;
+  &lt;li&gt;Don’t try to change others, lead by example - changing others is hard and you can waste your time.&lt;/li&gt;
+  &lt;li&gt;Also, vote with your feet if you feel the culture makes none of this possible - “it’s your fault if you’re unhappy or not progressing”.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;My thoughts: Sounded a bit like some of the issues that LBG have.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR: People are difficult.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;cicd-in-a-serverless-world-by-fernando-honig---a-consultant-at-contino-a-cicd-consultancy&quot;&gt;&lt;a href=&quot;https://2017.continuouslifecycle.london/sessions/cicd-in-a-serverless-world/&quot;&gt;CI/CD in a Serverless World&lt;/a&gt; by Fernando Honig - a consultant at Contino (a CI/CD consultancy)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Serverless is supposedly the &lt;em&gt;Next Big Thing™&lt;/em&gt; - containers were the last &lt;em&gt;Next Big Thing™&lt;/em&gt; and machine learning is the next &lt;em&gt;Next Big Thing™&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;The serverless idea combines functions as a service (e.g. AWS Lambda) with backend as a service (e.g. DynamoDB) to create full applications.&lt;/li&gt;
+  &lt;li&gt;AWS lambda is one provider with IBM Openwhisk, Azure Functions and Google Cloud Functions providing their own alternatives.&lt;/li&gt;
+  &lt;li&gt;Serverless is supposedly cheaper as you only pay for execution rather than paying to keep the server running.
+He used &lt;a href=&quot;http://serverlesscalc.com/&quot;&gt;this&lt;/a&gt; to show some prices.&lt;/li&gt;
+  &lt;li&gt;He showed an example serverless app with the static assets hosted in an S3 bucket which called a Lambda to get some data.&lt;/li&gt;
+  &lt;li&gt;He talked about how you can have different environments (e.g. prod, test, dev) by using different versions of the same Lambda (e.g. v6 = dev, v5 = test, v4 = prod) with the config being stored in environment variables, S3 or DynamoDB.&lt;/li&gt;
+  &lt;li&gt;Having all your logic in lambdas makes it harder to test due having to mock so many other lambdas.
+Integration testing sounds better but would cost money.&lt;/li&gt;
+  &lt;li&gt;He then showed an example of a CD pipeline using AWS Lambda and S3.&lt;/li&gt;
+  &lt;li&gt;Each build step is a single Lambda with S3 being used to pass zips of the code between the different steps (and also trigger subsequent steps).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;My thoughts: The different versions for different environments thing seemed mad and is also against AWS best practices of having different accounts for different environments.
+I’ve used Lambdas before for thumbnail generation on uploading an image which was neat but using it for your CD pipeline sounds crazy.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR: Serverless seems cool and is supposedly the &lt;em&gt;Next Big Thing™&lt;/em&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;openqa-avoiding-disasters-of-biblical-proportions-by-marita-werner---opensuse-qa-pm&quot;&gt;&lt;a href=&quot;https://2017.continuouslifecycle.london/sessions/openqa-avoiding-disasters-of-biblical-proportions/&quot;&gt;openQA: Avoiding Disasters of Biblical Proportions&lt;/a&gt; by Marita Werner - openSUSE QA PM&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Operating Systems are hard to test but need to be thoroughly tested due to lots of upstream changes.&lt;/li&gt;
+  &lt;li&gt;openSUSE have developed openQA in order to test their OSes:
+    &lt;ul&gt;
+      &lt;li&gt;Uses mouse &amp;amp; keyboard to interact (like a user would).&lt;/li&gt;
+      &lt;li&gt;“Reads” screen using OpenCV.&lt;/li&gt;
+      &lt;li&gt;Does graphical testing (like &lt;a href=&quot;https://github.com/BBC-News/wraith&quot;&gt;Wraith&lt;/a&gt;) and testing of console outputs.&lt;/li&gt;
+      &lt;li&gt;Provides screenshots, videos and HDD images for bug reproduction.&lt;/li&gt;
+      &lt;li&gt;Provides good visual reporting in the form of dashboards.&lt;/li&gt;
+      &lt;li&gt;Runs using VNC against VMs or real devices.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;openQA is used by openSUSE TumbleWeed (which releases every 3-4 days when it passes ~400 test cases) as well as by openSUSE Leap and Red Hat.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;My thoughts: I thought this talk would be interesting as I’ve been working on a lot of QA stuff at LBG but it was quite specific to OS testing.
+Their test runner is quite clever as they test against lots of differing Architectures and setups but the tests themselves are roughly on par with Wraith (image diffing)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR: Operating Systems have tests too.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;continuous-delivery-with-docker-by-christoph-lucas---a-consultant-at-pingworks&quot;&gt;&lt;a href=&quot;https://2017.continuouslifecycle.london/sessions/continuous-delivery-with-docker/&quot;&gt;Continuous Delivery with Docker&lt;/a&gt; by Christoph Lucas - a consultant at Pingworks&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Just like a regular CI pipeline except your build step produces a docker image (analogous to a jar file) which is then hosted in a private docker registry (analogous to nexus).&lt;/li&gt;
+  &lt;li&gt;Removes the need for Chef, Puppet or Ansible to setup your servers - all you need is Docker.&lt;/li&gt;
+  &lt;li&gt;You can also build in Docker on Jenkins (using a docker image with all the build tools bundled) rather than installing the build tools on your build slaves.
+    &lt;ul&gt;
+      &lt;li&gt;Then extract the built artefact to a new docker image for deployment.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Can use kubernetes as container runner for hosting the resulting image for acceptance tests.&lt;/li&gt;
+  &lt;li&gt;Docker isn’t all bells and whistles though - you can have security issues e.g. from uncontrolled upstream docker images.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;My thoughts: It sounds like it would be reasonably easy to convert from an existing CI pipeline to one that uses Docker.
+The main benefits would be ease of setting up new servers and updating existing runtime environments.
+Downsides are security and Docker images being big.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR: Docker is really cool.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;when-devops-goes-wrong-part-ii-by-david-stanley---head-of-reliability-at-trainline&quot;&gt;&lt;a href=&quot;https://2017.continuouslifecycle.london/sessions/when-devops-goes-wrong-part-ii/&quot;&gt;When Devops Goes Wrong… Part II&lt;/a&gt; by David Stanley - Head of Reliability at Trainline&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Issues from part one last year:
+    &lt;ul&gt;
+      &lt;li&gt;Monitoring.&lt;/li&gt;
+      &lt;li&gt;Deployment.&lt;/li&gt;
+      &lt;li&gt;People on call.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Automation breeds automation:
+    &lt;ul&gt;
+      &lt;li&gt;Infrastructure as code is code too.&lt;/li&gt;
+      &lt;li&gt;Make sure that it’s reviewed and tested.&lt;/li&gt;
+      &lt;li&gt;Also that you have frequent deployments and a rollback plan.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;With great power comes great responsibility:
+    &lt;ul&gt;
+      &lt;li&gt;Always think before you act - changes (e.g. deletion) in IaaS can happen very quickly.&lt;/li&gt;
+      &lt;li&gt;Governance can be a good addition to prevent some production issues.&lt;/li&gt;
+      &lt;li&gt;Have lots of redundancy too.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;People, process and tech:
+    &lt;ul&gt;
+      &lt;li&gt;Invest in existing people rather than hiring expensive contractors with desired skills.&lt;/li&gt;
+      &lt;li&gt;Prioritise goals correctly.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;My thoughts: Trainline seem to have a really modern stack and are fairly agile.
+None of these points were totally revelationary but they were still good to think about.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR: Things go wrong in Tech.
+People are difficult (again).&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;zero-to-continuous-delivery-on-the-cloud-by-james-heggs---a-consultant-at-clos-consultancy&quot;&gt;&lt;a href=&quot;https://2017.continuouslifecycle.london/sessions/zero-to-continuous-delivery-on-the-cloud/&quot;&gt;Zero to Continuous Delivery on the Cloud&lt;/a&gt; by James Heggs - a consultant at CLOS Consultancy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;James also runs the Manchester Devops meetups&lt;/li&gt;
+  &lt;li&gt;Talked a bit about Google cloud platform:
+    &lt;ul&gt;
+      &lt;li&gt;Very similar to AWS except resources are organised by project.&lt;/li&gt;
+      &lt;li&gt;Google Container Engine is roughly kubernetes.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Kubernetes is for automating deployment, scaling and container management.
+Their terminology is as follows:
+    &lt;ul&gt;
+      &lt;li&gt;Cluster - set of machines used to run the containers.&lt;/li&gt;
+      &lt;li&gt;Node - an individual machine where pods can be deployed.&lt;/li&gt;
+      &lt;li&gt;Pod - co-located group of containers.&lt;/li&gt;
+      &lt;li&gt;Service - defines a set of pods and a way of accessing them e.g. IP address.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;He then showed a demo which can be found &lt;a href=&quot;https://medium.com/google-cloud/zero-to-continuous-delivery-with-google-cloud-platform-8e3bf1312fb5&quot;&gt;here&lt;/a&gt; and  &lt;a href=&quot;https://github.com/eggsy84?utf8=%E2%9C%93&amp;amp;tab=repositories&amp;amp;q=gcp&amp;amp;type=&amp;amp;language=&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;My thoughts: You can make some really nifty stuff with Docker and Kubernetes.
+I should probably go to more meetups as well.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR: Docker and Kubernetes are really cool.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;api-testing-as-part-of-your-ci-pipeline-by-jason-smith---senior-developer-at-container-solutions&quot;&gt;&lt;a href=&quot;https://2017.continuouslifecycle.london/sessions/api-testing-as-part-of-your-ci-pipeline/&quot;&gt;API Testing as Part of Your CI Pipeline&lt;/a&gt; by Jason Smith - Senior Developer at Container Solutions&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Interface Description Languages are a good idea:
+    &lt;ul&gt;
+      &lt;li&gt;Precise&lt;/li&gt;
+      &lt;li&gt;Representation Independent&lt;/li&gt;
+      &lt;li&gt;Language Independent&lt;/li&gt;
+      &lt;li&gt;Maintainable&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;For APIs, SOAP wasn’t great generally but WSDL was a good idea.&lt;/li&gt;
+  &lt;li&gt;REST isn’t really standardised.&lt;/li&gt;
+  &lt;li&gt;OpenAPI specification (formerly Swagger) solves the problem.
+Alternatives are API Blueprint and RAML.&lt;/li&gt;
+  &lt;li&gt;Showed an OpenAPI example &lt;a href=&quot;https://github.com/ContainerSolutions/DreddDemo&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;The Swagger editor and UI seem useful.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/apiaryio/dredd&quot;&gt;Dredd&lt;/a&gt; takes your YAML OpenAPI spec and tests that your API implementation conforms.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mobilcom-debitel/pokemock&quot;&gt;Pokemock&lt;/a&gt; takes your YAML OpenAPI spec and provides a mock implementation of it
+(&lt;a href=&quot;https://github.com/Aconex/drakov&quot;&gt;Drakov&lt;/a&gt; is a mock server which uses API Blueprint specifications.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;My thoughts: I’ve used Swagger before but only for generating documentation for an API.
+Specifications, and the tests and mocks that you can create from them, sound useful if you’ve got an API consumer building their app at the same time as you build the API.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR: You should use API specifications if you’re building an API.&lt;/strong&gt;&lt;/p&gt;</content><author><name>David Broder-Rodgers</name></author><category term="post" /><summary type="html">A couple of weeks ago, I went to the second day of Continuous Lifecycle, a conference about all things Continuous Delivery, Continuous Integration and Continuous &amp;lt;insert word here&amp;gt;.</summary></entry><entry><title type="html">Synergy</title><link href="https://djbr.uk/2017/03/19/synergy.html" rel="alternate" type="text/html" title="Synergy" /><published>2017-03-19T20:00:00+00:00</published><updated>2017-03-19T20:00:00+00:00</updated><id>https://djbr.uk/2017/03/19/synergy</id><content type="html" xml:base="https://djbr.uk/2017/03/19/synergy.html">&lt;p&gt;As part of my Masters degree, I was involved in research into the mathematical modelling of how an infection spreads
 within a network of nodes.&lt;/p&gt;
 
 &lt;p&gt;Specifically, I was investigating how the probability of an epidemic changes when the regular network undergoes rewiring
