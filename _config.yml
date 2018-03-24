@@ -4,7 +4,7 @@ description: >
   Hi, my name is David Broder-Rodgers and I'm a software developer based in London. This site contains some
   of the things I've done - hopefully there will be much more here in the future!
 baseurl: ""
-url: https://djbr.uk
+url: https://dbr.ie
 permalink: /:year/:month/:day/:title.html
 paginate: 5
 paginate_path: /:num/
@@ -18,7 +18,7 @@ placeholder_image: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAA
 google_analytics: UA-37851343-2
 disqus:
     shortname: dbr-1
-    amp_url: https://amp.djbr.uk
+    amp_url: https://amp.dbr.ie
 
 defaults:
   - values:
