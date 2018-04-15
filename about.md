@@ -10,98 +10,114 @@ order:     2
 
 {{ site.description }}
 
-I'm currently a Software Developer at [Softwire][sw] which I joined after having graduated with an MSc and BA in
-Natural Sciences from the University of Cambridge. I'm originally from Northern Ireland.
+I currently work at [Softwire][sw] which I joined after having graduated with a MSc and MA in Natural Sciences from the
+University of Cambridge. I'm originally from Northern Ireland.
 
 
-# Professional Experience
+## Experience
 
-## Senior Software Developer at Softwire
+### Developer / Consultant / Technical Lead at Softwire
 _From September 2015_
 
 My role has spanned multiple projects across many different tech stacks. Despite this variety, I have been able to
-rapidly adopt the technologies and contribute quickly and substantially. This led to two promotions within fifteen
-months of joining. More recently, I've been involved in validating business ideas by creating and iterating
-multiple prototype apps. Below are some of the projects which I've worked on:
+rapidly adopt the technologies and contribute quickly and substantially. More recently, I've been involved in 
+validating business ideas by creating and iterating multiple prototype apps. Below are some of the projects which I've
+worked on.
 
-### Dashboard for Vivacity Labs
+I also regularly mentor several more junior developers and regularly volunteer at local [Code Club][code-club]
+sessions.
 
-I led a team of two junior developers to create an MVP dashboard website which processes a large amount of realtime
-data into digestable formats and statistics.
+#### Website for Department for Business, Energy & Industrial Services
 
-_Technologies:_
-Node.js, TypeScript, React, Redux, Webpack, Google Cloud Platform
-
-### Performance Tables Discovery for Department for Education
-
-We provided consultancy services to document a large existing system from an incumbent provider and identify pain points
-for current users. Our final deliverables also included an idealised technical architecture and various roadmaps to
-achieving this future perfect.
-
-### Website & Mobile App for Air Charter Services
-
-I helped to develop a hybrid website and mobile app running with Cordova which involved full-stack development and
-updating open source libraries.
+* Expanded on a website that had been developed during an alpha phase to ensure that it was secure, performant and
+generally suitable for public use
 
 _Technologies:_
-Node.js, TypeScript, React, Redux, Webpack, Cordova, OneSignal, C#, ASP.NET MVC, AWS
+Angular, WordPress, MySQL, Java, Jenkins, CloudFoundry
 
-### 3D Scanning App Prototype
+#### Code Review for Department for Education
 
-Over the course of four weeks, I developed an app to utilise the [Structure sensor][structure] to capture 3D scans and
-perform several computer vision operations on them such as feature detection.
+* Over the course of a week, reviewed 3 ASP.NET websites, assessing them on factors including code quality,
+architecture and security as well as assessing the existing supplier on technical leadership
+
+_Technologies:_
+C#, ASP.NET MVC, Azure, Visual Studio Team Services
+
+#### Dashboard for Vivacity Labs
+
+* Led a team of 2 junior developers to create a dashboard to display statistics
+* Processed large amounts of real time data (1M+ events per day) into digestible formats
+
+_Technologies:_
+Node.js, TypeScript, React, Redux, Webpack, GitHub, Jenkins, Google Cloud Platform
+
+#### Performance Tables Discovery for Department for Education
+
+* Documented a large existing data pipeline from an incumbent supplier and identified pain points, before creating an
+idealised architecture and a roadmap to achieve it, with potential savings of £3M
+
+#### Website & Mobile App for Air Charter Services
+
+* Helped to develop a hybrid website and mobile app running through Cordova as well as modernising a legacy backend
+system
+
+_Technologies:_
+Node.js, TypeScript, React, Redux, webpack, Cordova, OneSignal, C#, ASP.NET MVC, Jenkins, AWS
+
+#### 3D Scanning App Prototype for Belron
+
+* Over the course of 4 weeks, created a prototype app which captured 3D scans using a [Structure sensor][structure]
+and performed computer vision tasks such as feature detection, with the final product presented to senior management
+and used to gather further investment
 
 _Technologies:_
 Swift, SceneKit, OpenGL, C++, Point Cloud Library
 
-### App Prototype
+<!-- #### App Prototype
 
-In two weeks, I took a mobile app from idea to functional prototype. The app has since been taken from prototype phase
-to an MVP.
-
-_Technologies:_
-Node.js, React, Redux, Webpack, Cordova, OneSignal, Auth0, HockeyApp, AWS
-
-### Mobile Apps for Lloyds Banking Group
-
-We were brought in along with [Wipro Digital][wipro-digital] to digitally transform LBG, taking them towards a more
-agile way of working. The transformation aspects included interviewing new developers for the Mobile theme and providing
-training and technical leadership for many of the existing developers.
-
-I was initially involved in developing for both their existing [Android][lbg-android] and [iOS][lbg-ios] apps with many
-of the features requiring modification to the monolithic [internet banking site][lbg-web] too. I was then moved to a
-team to begin rewriting the Android app with a better structure and the latest technologies.
-
-Additionally, I designed and developed a BDD testing framework which allowed automated functional tests across all 10
-flavours of both the old and new apps which was used by dozens of onshore and offshore Quality Engineers throughout the
-bank.
+* In two weeks, took a mobile app from idea to functional prototype
 
 _Technologies:_
-Android - Java, RxJava, Retrofit, Dagger, ButterKnife;
-QA - Node.js, webdriver.io, Appium, Perfecto;
-iOS - Objective C, Swift;
-DevOps - Jenkins, Groovy, Gerrit;
+Node.js, React, Redux, Webpack, Cordova, OneSignal, Auth0, HockeyApp, AWS -->
 
-### Website for David Lloyd Leisure
+#### Mobile Apps for Lloyds Banking Group
 
-I initially performed support tasks for a legacy system followed by full–stack development of an
-[international website][dll-web] designed for acquiring new members. The project successfully launched to coincide with
-a large advertising campaign, despite deadlines being brought forward by several weeks.
+* Along with [Wipro Digital][wipro-digital], facilitated a digital transformation towards more agile ways of working
+and better technical practices
+* Developed features for both their existing [Android][lbg-android] and [iOS][lbg-ios] apps with changes to the
+monolithic [internet banking site][lbg-web] also required
+* Rebuilt the aging Android application to one with a better architecture reducing feature development time from weeks
+to days
+* Designed and developed a BDD testing framework, which ran across multiple banking brands and mobile platforms and was
+used by dozens of quality engineers, increasing end-to-end test coverage from 0% to around 80% for “platinum” user journeys
 
 _Technologies:_
-Website - C#, .NET, Sitecore, MSSQL, MongoDB, SCSS, jQuery;
-DevOps - Jenkins, Octopus Deploy, PowerShell, Gulp;
-Infrastructure - CloudFlare, Windows Server, New Relic, Loggly;
+Android: Java, RxJava, Retrofit, Dagger, ButterKnife;
+QA: Node.js, webdriver.io, Appium, Perfecto;
+DevOps: Jenkins, Groovy, Gerrit
 
-### Website for Soho House
+#### Website for David Lloyd Leisure
 
-Within a strict time frame and working independently for the most part, I designed and created a website to allow
-international membership fees to be paid through a foreign bank.
+* Performed support tasks for a legacy system followed by full–stack development of an [international website][dll-web]
+designed to acquire new members
+* Successfully launched to coincide with a large advertising campaign, despite deadlines being brought forward by
+several weeks
+* Designed a continuous deployment pipeline, reducing deployment time from 2 days to a few hours
+
+_Technologies:_
+Website: C#, .NET, Sitecore, MSSQL, MongoDB, SCSS, jQuery;
+DevOps: Jenkins, Octopus Deploy, PowerShell, Gulp;
+Infrastructure: CloudFlare, Windows Server, New Relic, Loggly
+
+#### Membership Website for Soho House
+
+* Within a strict time frame, designed and developed a website to allow over €300k of international membership fees to
+be received
 
 _Technologies:_
 Ruby on Rails, PostgreSQL, CircleCI, Heroku, XE API
 
-<!-- ### Internal Charity Newsletter App
+<!-- #### Internal Charity Newsletter App
 
 I created a web app within a week to allow employees to respond to questions asked and then send out the answers as a
 newsletter.
@@ -109,59 +125,58 @@ newsletter.
 _Technologies:_
 Bootstrap, Express, Heroku, Jade, jQuery, Mailgun, Mocha, Node.js, PostgreSQL, TypeScript -->
 
-### Responsive Website Redesign for UIA
+#### Responsive Website Redesign for UIA
 
-I modified [an existing website][uia] to improve responsiveness for mobile devices. The required development was 
-initially estimated at 50 days but I completed it within a week.
+* Modified an existing website to improve responsiveness for mobile devices, completing the estimated 50 days of work
+within a week
 
 _Technologies:_
 CSS, HTML, Java, Tomcat
 
-<!-- ### Internal Excel Add-in
+<!-- #### Internal Excel Add-in
 
 I ported an old VBA driven spreadsheet to an Excel integrated website.
 
 _Technologies:_
 Excel, Express, JavaScript API for Office, Node.js, TypeScript -->
 
-### API for HushKeys
+#### API for HushKeys
 
-I was part of a small team which created a REST API backend for an upcoming [social network start–up][hsk] from scratch
-with scalability in mind.
+* Created a REST API backend for an upcoming [social network start–up][hsk] from scratch with scalability in mind,
+helping them to secure funding from angel investors
 
 _Technologies:_
 Node.js, TypeScript, Express, Neo4j, AWS Lambda, Heroku
 
-<!-- ### Internal IOU app
+<!-- #### Internal IOU app
 
 I modified the app to allow IOUs to be recorded between employees.
 
 _Technologies:_ .NET, AngularJS, C#, jQuery, MSSQL
 
-### Internal Employee CMS
+#### Internal Employee CMS
 
 I updated the website to allow easier addition and removal of employees.
 
 _Technologies:_
 Active Directory, Cucumber, MySQL, RSpec, Ruby on Rails -->
 
-### Website for Channel 5
+#### Website for Channel 5
 
-I was involved in updating an internal CMS to allow playlists to be created and content to be prepared for a new
-online platform.
+* Updated an internal CMS to allow playlists to be created and content to be prepared for a new online platform
 
 _Technologies:_
 Ruby on Rails, MySQL
 
-### Performance Tracking CMS
+<!-- #### Performance Tracking CMS
 
 I developed several features for a website to record how employees are performing relative to each other providing a
 gamification element.
 
 _Technologies:_
-C#, .NET, MSSQL, Umbraco, AWS
+C#, .NET, MSSQL, Umbraco, AWS -->
 
-## Associate Technology Consultant Intern at PwC
+### Associate Technology Consultant Intern at PwC
 _From July 2014 until September 2014_
 
 This internship involved learning about a role in Technology Consulting as well as assisting with ongoing projects.
@@ -169,28 +184,28 @@ In addition to my day to day work, I was involved in presenting ideas as part of
 of the BBC and how to attract younger audiences, to around 150 people including PwC partners and BBC executives. One of
 these ideas was chosen as the best overall, ahead of seven other ideas.
 
-### Website for Transport for London
+<!-- #### Website for Transport for London
 
 I was tasked with writing an authentication layer around an analytics dashboard that PwC were producing for TfL.
 
 _Technologies:_
 C#, .NET
 
-### Analysis for Qatar Airways
+#### Analysis for Qatar Airways
 
 I assisted with categorising billions of dollars of spend data followed by the production of a data control panel for
 clients to upload up–to–date figures on demand.
 
 _Technologies:_
-Qlikview, Excel
+Qlikview, Excel -->
 
-## Associate Technology Consultant Intern at Deloitte Digital
+### Associate Technology Consultant Intern at Deloitte Digital
 _From August 2013 until September 2013_
 
 For this role, I was working with the Deloitte Digital teams in both Belfast and London, contributing to ongoing
 projects.
 
-### BDD test generator
+<!-- #### BDD test generator
 
 This involved helping with the development of a Visual Studio plugin which pulled BDD–style tests from JRIA and created
 boilerplate code for multiple test runners.
@@ -198,28 +213,15 @@ boilerplate code for multiple test runners.
 _Technologies:_
 C#, .NET, xUnit
 
-### Salesforce Android app
+#### Salesforce Android app
 
 I assisted development of a showcase [Android app][sf-app] which was designed to allow offline recording of sales data
 which would then synchronise to a Salesforce system.
 
 _Technologies:_
-Android, Java
+Android, Java -->
 
-
-# Other experience
-
-## Open Source contributions
-
-I've participated in [24 Pull Requests][24pr] and [Hacktoberfest][hacktoberfest] for the last couple of years as well
-as contributing to some popular repositories such as [jQuery][jquery], [Homebrew][brew], [DefinitelyTyped][dt] and
-[webdriver.io][wdio].
-
-## Mentoring
-
-I have mentored several more junior developers and regularly volunteer at local Code Club sessions.
-
-## Shop Assistant for Age UK
+<!-- ## Shop Assistant for Age UK
 _From August 2008 until September 2011_
 
 This involved processing financial details and dealing with sometimes uncooperative customers.
@@ -228,45 +230,45 @@ This involved processing financial details and dealing with sometimes uncooperat
 _From May 2007 until September 2011_
 
 This comprised of processing large amounts of data as well as fault finding and problem solving in a time restricted and
-stressful environment.
+stressful environment. -->
 
 
-# Education
+## Education
 
-## University of Cambridge
+### University of Cambridge
 
-1st class BA & MSc in Natural Sciences (Physical)
+1st class MA, MSci in Natural Sciences (Physical)
 
-### Publications
+#### Publications
 
 Effects of local and global network connectivity on synergistic epidemics [(10.1103/PhysRevE.92.062814)][syn]
 
-<!-- ### Treasurer for Selwyn College Boat Club
+<!-- #### Treasurer for Selwyn College Boat Club
 _From April 2014 until July 2015_
 
 This included processing thousands of pounds worth of transactions, liaising with companies, alumni and sponsors and
 projecting finances for upcoming events.
 
-### Webmaster for Selwyn College Boat Club
+#### Webmaster for Selwyn College Boat Club
 _From March 2013 until July 2014_
 
 This involved maintaining a Drupal website in addition to the mailing lists and producing several bespoke web
 applications.
 
-### President of Selwyn College Natural Sciences Society
+#### President of Selwyn College Natural Sciences Society
 _From June 2013 until June 2014_
 
 This required organisation of several social events for the society such as the annual dinner as well as coordinating and
 managing a committee.
 
-### Ticketing Officer / Webmaster for Selwyn Snowball 2013
+#### Ticketing Officer / Webmaster for Selwyn Snowball 2013
 _From May 2013 until December 2013_
 
 This included overseeing the sale of tickets and entry of guests into the event. The overall system was greatly improved
 from previous years by creating several web applications in Python, PHP, JavaScript and HTML along with the introduction
 of bar code scanning for the tickets. -->
 
-<!-- ## Friends' School Lisburn
+<!-- ### Friends' School Lisburn
 
 _A Level:_ Chemistry: A*; Physics: A*; Maths: A*; Further Maths: A*
 
@@ -276,9 +278,15 @@ _GCSE:_ Chemistry: A*; Physics: A*; Maths: A*; Additional Maths: A*; Spanish: A*
 English Language: A; English Literature: A; Religious Studies: A -->
 
 
-# Other notable stuff
+## Other notable stuff
 
-## Certifications
+### Open Source contributions
+
+I've participated in [24 Pull Requests][24pr] and [Hacktoberfest][hacktoberfest] for the last couple of years as well
+as contributing to some popular repositories such as [jQuery,][jquery] [Homebrew,][brew] [DefinitelyTyped][dt] and
+[webdriver.io.][wdio]
+
+### Certifications
 
 * Level 5 Diploma in Leadership and Management *(in progress)*
 * Professional Scrum Master I
@@ -286,6 +294,7 @@ English Language: A; English Literature: A; Religious Studies: A -->
 
 
 [sw]: https://www.softwire.com/
+[code-club]: https://www.codeclub.org.uk/
 [structure]: https://structure.io/
 [wipro-digital]: http://wiprodigital.com/
 [lbg-android]: https://play.google.com/store/apps/details?id=com.grppl.android.shell.CMBlloydsTSB73
@@ -293,9 +302,8 @@ English Language: A; English Literature: A; Religious Studies: A -->
 [lbg-web]: https://www.lloydsbank.com/
 [dll-web]: https://www.davidlloyd.co.uk/
 [hsk]: https://hushkeys.com/
-[uia]: https://www.uia.co.uk/unite/house-insurance/get-a-quote/tiered
-[sf-app]: https://play.google.com/store/apps/details?id=com.deloitte.pocketsales
 [24pr]: https://24pullrequests.com/
+[hacktoberfest]: https://hacktoberfest.digitalocean.com/
 [jquery]: https://github.com/jquery/jquery
 [brew]: https://github.com/Homebrew/brew
 [dt]: https://github.com/DefinitelyTyped/DefinitelyTyped
