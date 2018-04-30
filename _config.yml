@@ -29,9 +29,13 @@ jekyll-minifier:
     - feed.xml
     - sitemap.xml
 
+extlinks:
+  attributes: {target: _blank}
+
 # Build settings
 markdown: kramdown
 plugins:
+  - jekyll-extlinks
   - jekyll-feed
   - jekyll-minifier
   - jekyll-paginate

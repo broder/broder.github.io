@@ -7,6 +7,7 @@ gem 'nokogiri'
 gem 'rake'
 
 group :jekyll_plugins do
+  gem 'jekyll-extlinks'
   gem 'jekyll-feed'
   gem 'jekyll-minifier'
   gem 'jekyll-paginate'
