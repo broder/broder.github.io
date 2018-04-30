@@ -2,6 +2,7 @@
 title:    Continuous Lifecycle Conference 2017
 date:     2017-05-29 20:00:00 +0000
 category: post
+image:    /assets/clc.png
 ---
 A couple of weeks ago, I went to the second day of [Continuous Lifecycle][clc], a conference about all things Continuous Delivery, Continuous Integration and Continuous &lt;insert word here&gt;.
 
