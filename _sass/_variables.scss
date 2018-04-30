@@ -1,8 +1,6 @@
 $font-family: 'Source Code Pro', monospace;
-
 $primary: #231F20;
 $secondary: #fff;
-
 $unit: 15px;
 $small-screen: "screen and (max-width: #{$unit * 64})";
 $large-screen: "screen and (min-width: #{$unit * 64})";

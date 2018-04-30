@@ -1,15 +1,13 @@
 footer {
-  text-align: center;
-
-  @media #{$large-screen} {
-    position: relative;
-    left: $unit * 22;
-    width: $unit * 40;
-    margin: 0 $unit;
-  }
-
-  @media #{$small-screen} {
-      width: 100%;
-      margin: 0;
-  }
+    text-align: center;
+    @media #{$large-screen} {
+        position: relative;
+        left: $unit * 22;
+        width: $unit * 40;
+        margin: 0 $unit;
+    }
+    @media #{$small-screen} {
+        width: 100%;
+        margin: 0;
+    }
 }
