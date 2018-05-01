@@ -10,13 +10,13 @@ order:     2
 
 {{ site.description }}
 
-I currently work at [Softwire][sw] which I joined after having graduated with a MSc and MA in Natural Sciences from the
+I currently work at Softwire which I joined after having graduated with a MSc and MA in Natural Sciences from the
 University of Cambridge. I'm originally from Northern Ireland.
 
 
 ## Experience
 
-### Developer / Consultant / Technical Lead at Softwire
+### Developer / Consultant / Technical Lead at [Softwire][sw]
 _From September 2015_
 
 My role has spanned multiple projects across many different tech stacks. Despite this variety, I have been able to
@@ -27,7 +27,7 @@ worked on.
 I also regularly mentor several more junior developers and regularly volunteer at local [Code Club][code-club]
 sessions.
 
-#### Website for Department for Business, Energy & Industrial Services
+#### Website for [Department for Business, Energy & Industrial Services][beis]
 
 * Expanded on a website that had been developed during an alpha phase to ensure that it was secure, performant and
 generally suitable for public use
@@ -35,7 +35,7 @@ generally suitable for public use
 _Technologies:_
 Angular, WordPress, MySQL, Java, Jenkins, CloudFoundry
 
-#### Code Review for Department for Education
+#### Code Review for [Department for Education][dfe]
 
 * Over the course of a week, reviewed 3 ASP.NET websites, assessing them on factors including code quality,
 architecture and security as well as assessing the existing supplier on technical leadership
@@ -43,7 +43,7 @@ architecture and security as well as assessing the existing supplier on technica
 _Technologies:_
 C#, ASP.NET MVC, Azure, Visual Studio Team Services
 
-#### Dashboard for Vivacity Labs
+#### Dashboard for [Vivacity Labs][viv]
 
 * Led a team of 2 junior developers to create a dashboard to display statistics
 * Processed large amounts of real time data (1M+ events per day) into digestible formats
@@ -51,12 +51,12 @@ C#, ASP.NET MVC, Azure, Visual Studio Team Services
 _Technologies:_
 Node.js, TypeScript, React, Redux, Webpack, GitHub, Jenkins, Google Cloud Platform
 
-#### Performance Tables Discovery for Department for Education
+#### Performance Tables Discovery for [Department for Education][dfe]
 
 * Documented a large existing data pipeline from an incumbent supplier and identified pain points, before creating an
 idealised architecture and a roadmap to achieve it, with potential savings of £3M
 
-#### Website & Mobile App for Air Charter Services
+#### Website & Mobile App for [Air Charter Services][acs]
 
 * Helped to develop a hybrid website and mobile app running through Cordova as well as modernising a legacy backend
 system
@@ -64,7 +64,7 @@ system
 _Technologies:_
 Node.js, TypeScript, React, Redux, webpack, Cordova, OneSignal, C#, ASP.NET MVC, Jenkins, AWS
 
-#### 3D Scanning App Prototype for Belron
+#### 3D Scanning App Prototype for [Belron][belron]
 
 * Over the course of 4 weeks, created a prototype app which captured 3D scans using a [Structure sensor][structure]
 and performed computer vision tasks such as feature detection, with the final product presented to senior management
@@ -80,12 +80,12 @@ Swift, SceneKit, OpenGL, C++, Point Cloud Library
 _Technologies:_
 Node.js, React, Redux, Webpack, Cordova, OneSignal, Auth0, HockeyApp, AWS -->
 
-#### Mobile Apps for Lloyds Banking Group
+#### Mobile Apps for [Lloyds Banking Group][lbg]
 
 * Along with [Wipro Digital][wipro-digital], facilitated a digital transformation towards more agile ways of working
 and better technical practices
 * Developed features for both their existing [Android][lbg-android] and [iOS][lbg-ios] apps with changes to the
-monolithic [internet banking site][lbg-web] also required
+monolithic internet banking site also required
 * Rebuilt the aging Android application to one with a better architecture reducing feature development time from weeks
 to days
 * Designed and developed a BDD testing framework, which ran across multiple banking brands and mobile platforms and was
@@ -96,10 +96,10 @@ Android: Java, RxJava, Retrofit, Dagger, ButterKnife;
 QA: Node.js, webdriver.io, Appium, Perfecto;
 DevOps: Jenkins, Groovy, Gerrit
 
-#### Website for David Lloyd Leisure
+#### Website for [David Lloyd Leisure][dll]
 
-* Performed support tasks for a legacy system followed by full–stack development of an [international website][dll-web]
-designed to acquire new members
+* Performed support tasks for a legacy system followed by full–stack development of an international website designed
+to acquire new members
 * Successfully launched to coincide with a large advertising campaign, despite deadlines being brought forward by
 several weeks
 * Designed a continuous deployment pipeline, reducing deployment time from 2 days to a few hours
@@ -109,7 +109,7 @@ Website: C#, .NET, Sitecore, MSSQL, MongoDB, SCSS, jQuery;
 DevOps: Jenkins, Octopus Deploy, PowerShell, Gulp;
 Infrastructure: CloudFlare, Windows Server, New Relic, Loggly
 
-#### Membership Website for Soho House
+#### Membership Website for [Soho House][sh]
 
 * Within a strict time frame, designed and developed a website to allow over €300k of international membership fees to
 be received
@@ -125,7 +125,7 @@ newsletter.
 _Technologies:_
 Bootstrap, Express, Heroku, Jade, jQuery, Mailgun, Mocha, Node.js, PostgreSQL, TypeScript -->
 
-#### Responsive Website Redesign for UIA
+#### Responsive Website Redesign for [UIA][uia]
 
 * Modified an existing website to improve responsiveness for mobile devices, completing the estimated 50 days of work
 within a week
@@ -140,9 +140,9 @@ I ported an old VBA driven spreadsheet to an Excel integrated website.
 _Technologies:_
 Excel, Express, JavaScript API for Office, Node.js, TypeScript -->
 
-#### API for HushKeys
+#### API for [HushKeys][hsk]
 
-* Created a REST API backend for an upcoming [social network start–up][hsk] from scratch with scalability in mind,
+* Created a REST API backend for an upcoming social network start–up from scratch with scalability in mind,
 helping them to secure funding from angel investors
 
 _Technologies:_
@@ -161,7 +161,7 @@ I updated the website to allow easier addition and removal of employees.
 _Technologies:_
 Active Directory, Cucumber, MySQL, RSpec, Ruby on Rails -->
 
-#### Website for Channel 5
+#### Website for [Channel 5][ch5]
 
 * Updated an internal CMS to allow playlists to be created and content to be prepared for a new online platform
 
@@ -176,7 +176,7 @@ gamification element.
 _Technologies:_
 C#, .NET, MSSQL, Umbraco, AWS -->
 
-### Associate Technology Consultant Intern at PwC
+### Associate Technology Consultant Intern at [PwC][pwc]
 _From July 2014 until September 2014_
 
 This internship involved learning about a role in Technology Consulting as well as assisting with ongoing projects.
@@ -199,7 +199,7 @@ clients to upload up–to–date figures on demand.
 _Technologies:_
 Qlikview, Excel -->
 
-### Associate Technology Consultant Intern at Deloitte Digital
+### Associate Technology Consultant Intern at [Deloitte Digital][deloitte]
 _From August 2013 until September 2013_
 
 For this role, I was working with the Deloitte Digital teams in both Belfast and London, contributing to ongoing
@@ -295,13 +295,23 @@ as contributing to some popular repositories such as [jQuery,][jquery] [Homebrew
 
 [sw]: https://www.softwire.com/
 [code-club]: https://www.codeclub.org.uk/
+[beis]: https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy
+[dfe]: https://www.gov.uk/government/organisations/department-for-education
+[viv]: http://www.vivacitylabs.com/
+[acs]: http://www.aircharter.co.uk/
+[belron]: https://www.belron.com/
 [structure]: https://structure.io/
+[lbg]: https://www.lloydsbank.com/
 [wipro-digital]: http://wiprodigital.com/
 [lbg-android]: https://play.google.com/store/apps/details?id=com.grppl.android.shell.CMBlloydsTSB73
 [lbg-ios]: https://itunes.apple.com/gb/app/apple-store/id469964520
-[lbg-web]: https://www.lloydsbank.com/
-[dll-web]: https://www.davidlloyd.co.uk/
+[dll]: https://www.davidlloyd.co.uk/
+[sh]: https://www.sohohouse.com/
+[uia]: https://www.uia.co.uk/
 [hsk]: https://hushkeys.com/
+[ch5]: http://www.channel5.com/
+[pwc]: https://www.pwc.co.uk/
+[deloitte]: https://eu.deloittedigital.com/en/home
 [24pr]: https://24pullrequests.com/
 [hacktoberfest]: https://hacktoberfest.digitalocean.com/
 [jquery]: https://github.com/jquery/jquery
