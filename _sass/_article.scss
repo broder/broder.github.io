@@ -35,10 +35,12 @@ main {
                 width: 100%;
                 height: auto;
                 object-fit: cover;
-                margin: $unit 0;
                 &.preview {
                     max-height: $unit * 10;
                 }
+            }
+            img {
+                margin: $unit 0;
             }
             p {
                 line-height: $unit * 4 / 3;
