@@ -68,7 +68,7 @@ module Jekyll
       class YouTube < Lazy
         def render(context)
           iframe_attrs = {
-            'data-src': "https://www.youtube.com/embed/#{@options[:id]}?controls=0&showinfo=0&rel=0&autoplay=1",
+            'data-src': "https://www.youtube.com/embed/#{@options[:id]}?controls=0&showinfo=0&rel=0&autoplay=1&mute=1",
             title: context[@options[:title]] || @options[:title],
             frameborder: '0'
           }
