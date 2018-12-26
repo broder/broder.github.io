@@ -1,11 +1,12 @@
 {
-    "recommendations": [
-        "michelemelluso.code-beautifier",
-        "k--kato.intellij-idea-keybindings",
-        "christian-kohler.path-intellisense",
-        "robertohuertasm.vscode-icons",
-        "sidneys1.gitconfig",
-        "ginfuru.vscode-jekyll-snippets",
-        "rebornix.ruby"
-    ]
+  "recommendations": [
+    "michelemelluso.code-beautifier",
+    "k--kato.intellij-idea-keybindings",
+    "christian-kohler.path-intellisense",
+    "robertohuertasm.vscode-icons",
+    "sidneys1.gitconfig",
+    "ginfuru.vscode-jekyll-snippets",
+    "rebornix.ruby",
+    "castwide.solargraph"
+  ]
 }

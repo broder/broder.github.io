@@ -1,85 +1,103 @@
 main {
-    @media #{$large-screen} {
-        position: relative;
-        left: $unit * 22;
-        width: $unit * 40;
-        margin: 0 $unit;
+  @media #{$large-screen} {
+    position: relative;
+    left: $unit * 22;
+    width: $unit * 40;
+    margin: 0 $unit;
+  }
+
+  @media #{$small-screen} {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container {
+    margin-bottom: $unit;
+
+    .heading {
+      width: 100%;
+      display: inline-block;
+      border-bottom: 2px solid $primary;
+
+      .title {
+        margin: $unit / 2 $unit;
+        float: left;
+        font-size: $unit * 2;
+      }
+
+      .subtitle {
+        margin: $unit * 3 / 2 $unit $unit / 2 $unit;
+        float: right;
+        font-size: $unit;
+      }
     }
-    @media #{$small-screen} {
+
+    .content {
+      margin: $unit;
+      text-align: justify;
+
+      img,
+      amp-img {
+        display: block;
         width: 100%;
-        margin: 0;
-    }
-    .container {
-        margin-bottom: $unit;
-        .heading {
-            width: 100%;
-            display: inline-block;
-            border-bottom: 2px solid $primary;
-            .title {
-                margin: $unit / 2 $unit;
-                float: left;
-                font-size: $unit * 2;
-            }
-            .subtitle {
-                margin: $unit * 3 / 2 $unit $unit / 2 $unit;
-                float: right;
-                font-size: $unit;
-            }
+        height: auto;
+        object-fit: cover;
+
+        &.preview {
+          max-height: $unit * 10;
         }
-        .content {
-            margin: $unit;
-            text-align: justify;
-            img,
-            amp-img {
-                display: block;
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                &.preview {
-                    max-height: $unit * 10;
-                }
-            }
-            img {
-                margin: $unit 0;
-            }
-            p {
-                line-height: $unit * 4 / 3;
-                margin: $unit 0;
-            }
-            div.yt {
-                position: relative;
-                padding-top: $unit;
-                height: 0;
-                &.w2h1 {
-                    padding-bottom: 50%;
-                }
-                &.w16h9 {
-                    padding-bottom: 56.25%;
-                }
-                iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .more,
-            .previous {
-                float: left;
-            }
-            .date,
-            .next {
-                float: right;
-            }
-            .next,
-            .previous {
-                margin: $unit 0;
-            }
+      }
+
+      img {
+        margin: $unit 0;
+      }
+
+      p {
+        line-height: $unit * 4 / 3;
+        margin: $unit 0;
+      }
+
+      div.yt {
+        position: relative;
+        padding-top: $unit;
+        height: 0;
+
+        &.w2h1 {
+          padding-bottom: 50%;
         }
+
+        &.w16h9 {
+          padding-bottom: 56.25%;
+        }
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .more,
+      .previous {
+        float: left;
+      }
+
+      .date,
+      .next {
+        float: right;
+      }
+
+      .next,
+      .previous {
+        margin: $unit 0;
+      }
     }
-    .pagination {
-        margin: $unit;
-        text-align: center;
-    }
+  }
+
+  .pagination {
+    margin: $unit;
+    text-align: center;
+  }
 }

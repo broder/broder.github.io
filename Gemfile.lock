@@ -9,6 +9,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     ast (2.4.0)
+    backport (0.2.0)
     colorator (1.1.0)
     colorize (0.8.1)
     concurrent-ruby (1.1.4)
@@ -33,6 +34,7 @@ GEM
       typhoeus (~> 0.7)
       yell (~> 2.0)
     htmlcompressor (0.4.0)
+    htmlentities (4.3.4)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -92,6 +94,8 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    reverse_markdown (1.1.0)
+      nokogiri
     rouge (3.3.0)
     rubocop (0.61.1)
       jaro_winkler (~> 1.5.1)
@@ -109,7 +113,19 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    solargraph (0.30.0)
+      backport (~> 0.2)
+      htmlentities (~> 4.3, >= 4.3.4)
+      kramdown (~> 1.16)
+      parser (~> 2.3)
+      reverse_markdown (~> 1.0, >= 1.0.5)
+      rubocop (~> 0.52)
+      thor (~> 0.19, >= 0.19.4)
+      tilt (~> 2.0)
+      yard (~> 0.9)
+    thor (0.20.3)
     thread_safe (0.3.6)
+    tilt (2.0.9)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
     tzinfo (1.2.5)
@@ -117,6 +133,7 @@ GEM
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.1)
+    yard (0.9.16)
     yell (2.0.7)
 
 PLATFORMS
@@ -135,7 +152,7 @@ DEPENDENCIES
   nokogiri
   rake
   rubocop
-  tzinfo-data
+  solargraph
 
 RUBY VERSION
    ruby 2.6.0p0
