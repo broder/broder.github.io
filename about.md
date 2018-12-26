@@ -24,16 +24,36 @@ rapidly adopt the technologies and contribute quickly and substantially. More re
 validating business ideas by creating and iterating multiple prototype apps. Below are some of the projects which I've
 worked on.
 
-I also regularly mentor several more junior developers and regularly volunteer at local [Code Club][code-club]
-sessions.
+I also regularly mentor several more junior developers, organise various tech events and blog posts as Softwire's 
+"Tech Officer" and volunteer at local [Code Club][code-club] sessions.
 
-#### Website for [Department for Business, Energy & Industrial Services][beis]
+#### Website for the [Office for Product Safety & Standards][opss]
 
-* Expanded on a website that had been developed during an alpha phase to ensure that it was secure, performant and
-generally suitable for public use
+* Initially, during an Alpha phase, evaluated and architected several different technical solutions before selecting
+the most desirable
+* Continuously engaged with stakeholders to ensure security compliance, alignment with existing infrastructure and
+conformity with government standards
+* Then, during the Beta phase, led a team of 8 developers to create and iterate a product safety related case working
+system
+* Additionally, led a second team of 4 to rapidly develop another service to meet further aspects of the project's
+changing EU Exit requirements
+* Defined a flexible tech stack to use as the Office for Product Safety & Standards expands and created a roadmap to
+commonise existing services into the platform
+
+_Technologies:_
+Ruby on Rails, Keycloak, Java, Postgres, Elasticsearch, TravisCI, CloudFoundry, AWS
+
+[Source Code][opss-source]
+
+#### Website for [Department for Business, Energy & Industrial Services][esas]
+
+* Expanded on an energy saving recommendation website that had been developed during an alpha phase to ensure that it 
+was secure, performant and generally suitable for public use
 
 _Technologies:_
 Angular, WordPress, MySQL, Java, Jenkins, CloudFoundry
+
+[Source Code][esas-source]
 
 #### Code Review for [Department for Education][dfe]
 
@@ -45,8 +65,9 @@ C#, ASP.NET MVC, Azure, Visual Studio Team Services
 
 #### Dashboard for [Vivacity Labs][viv]
 
-* Led a team of 2 junior developers to create a dashboard to display statistics
-* Processed large amounts of real time data (1M+ events per day) into digestible formats
+* Led a team of 2 junior developers to create [a dashboard to display statistics][viv-site]
+* Processed large amounts of real time data (1M+ events per day) into digestible formats for 100s of pitches around
+the world
 
 _Technologies:_
 Node.js, TypeScript, React, Redux, Webpack, GitHub, Jenkins, Google Cloud Platform
@@ -98,8 +119,8 @@ DevOps: Jenkins, Groovy, Gerrit
 
 #### Website for [David Lloyd Leisure][dll]
 
-* Performed support tasks for a legacy system followed by full–stack development of an international website designed
-to acquire new members
+* Performed support tasks for a legacy system followed by full–stack development of [an international website designed
+to acquire new members][dll]
 * Successfully launched to coincide with a large advertising campaign, despite deadlines being brought forward by
 several weeks
 * Designed a continuous deployment pipeline, reducing deployment time from 2 days to a few hours
@@ -289,15 +310,20 @@ as contributing to some popular repositories such as [jQuery,][jquery] [Homebrew
 ### Certifications
 
 * Level 5 Diploma in Leadership and Management *(in progress)*
+* Smartly MBA *(in progress)*
 * Professional Scrum Master I
 * MCSA: Web applications - Programming in C# (70-483), Developing ASP.NET MVC Web Applications (70-486)
 
 
 [sw]: https://www.softwire.com/
 [code-club]: https://www.codeclub.org.uk/
-[beis]: https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy
+[opss]: https://www.gov.uk/government/organisations/office-for-product-safety-and-standards
+[opss-source]: https://github.com/UKGovernmentBEIS/beis-mspsds
+[esas]: https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy
+[esas-source]: https://github.com/UKGovernmentBEIS/beis-consumer-energy-efficiency-advice-service
 [dfe]: https://www.gov.uk/government/organisations/department-for-education
 [viv]: http://www.vivacitylabs.com/
+[viv-site]: http://www.intelligent-play.co.uk/
 [acs]: http://www.aircharter.co.uk/
 [belron]: https://www.belron.com/
 [structure]: https://structure.io/
