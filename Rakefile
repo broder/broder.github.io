@@ -30,10 +30,10 @@ task :validate_amp do
 end
 
 task :validate_accessibility do
-  files = Dir["./#{build_folder}/**/*.html"].select { |f| File.file? f }.map { |f| File.absolute_path f }
+  files = Dir["./#{build_folder}/**/*.html"].select { |f| File.file? f }
   success = true
   files.each do |file|
-    success &&= system "node_modules/.bin/pa11y file://#{file}"
+    success &&= system "node_modules/.bin/pa11y #{file}"
   end
   raise unless success
 end
