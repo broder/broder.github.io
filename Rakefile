@@ -12,7 +12,7 @@ task :build do
   system "JEKYLL_ENV=production bundle exec jekyll build --destination #{build_folder}"
 end
 
-task deploy: %w[clean build] do
+task :deploy do
   msg = `git log --oneline -1 | cat`
   msg.sub!("\n", '')
   `cd #{build_folder} && git add .`
@@ -27,17 +27,17 @@ task :generate_logos do
   `cd logos && npm run export -- --outDir ../assets/logos`
 end
 
-task test: %w[validate_ruby build validate_html validate_amp validate_accessibility]
+task test: %w[lint_ruby test_html test_amp test_accessibility]
 
-RuboCop::RakeTask.new(:validate_ruby) do |t|
+RuboCop::RakeTask.new(:lint_ruby) do |t|
   t.options = ['--display-cop-names']
 end
 
-task :validate_html do
+task :test_html do
   HTMLProofer.check_directory(build_folder, assume_extension: true, disable_external: true, url_ignore: [/dbr.ie/]).run
 end
 
-task :validate_amp do
+task :test_amp do
   files = Dir["./#{build_folder}/amp/**/*.html"].select { |f| File.file? f }
   success = true
   files.each do |file|
@@ -46,11 +46,13 @@ task :validate_amp do
   raise unless success
 end
 
-task :validate_accessibility do
+task :test_accessibility do
   files = Dir["./#{build_folder}/**/*.html"].select { |f| File.file?(f) && !f.include?('/amp/') }
   success = true
+  pa11y_command = 'node_modules/.bin/pa11y'
+  pa11y_command << " --config #{ENV['PA11Y_CONFIG']}" if ENV['PA11Y_CONFIG'] # For running in Docker
   files.each do |file|
-    success &&= system "node_modules/.bin/pa11y #{file}"
+    success &&= system "#{pa11y_command} #{file}"
   end
   raise unless success
 end
