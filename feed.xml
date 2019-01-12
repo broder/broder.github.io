@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.0">Jekyll</generator><link href="https://dbr.ie/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dbr.ie/" rel="alternate" type="text/html" /><updated>2018-05-01T07:28:04+01:00</updated><id>https://dbr.ie/</id><title type="html">David Broder-Rodgers</title><subtitle>Hi, my name is David Broder-Rodgers and I'm a software developer based in London. This site contains some of the things I've done - hopefully there will be much more here in the future!
-</subtitle><author><name>David Broder-Rodgers</name></author><entry><title type="html">Continuous Lifecycle Conference 2017</title><link href="https://dbr.ie/2017/05/29/continous-lifecycle.html" rel="alternate" type="text/html" title="Continuous Lifecycle Conference 2017" /><published>2017-05-29T21:00:00+01:00</published><updated>2017-05-29T21:00:00+01:00</updated><id>https://dbr.ie/2017/05/29/continous-lifecycle</id><content type="html" xml:base="https://dbr.ie/2017/05/29/continous-lifecycle.html">&lt;p&gt;A couple of weeks ago, I went to the second day of &lt;a href=&quot;https://2017.continuouslifecycle.london/&quot;&gt;Continuous Lifecycle&lt;/a&gt;, a conference about all things Continuous Delivery, Continuous Integration and Continuous &amp;lt;insert word here&amp;gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://dbr.ie/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dbr.ie/" rel="alternate" type="text/html" /><updated>2019-01-12T12:35:54+00:00</updated><id>https://dbr.ie/feed.xml</id><title type="html">David Broder-Rodgers</title><subtitle>Hi, my name is David Broder-Rodgers and I'm a software developer based in London. This site contains some of the things I've done.
+</subtitle><author><name>David Broder-Rodgers</name></author><entry><title type="html">Continuous Lifecycle Conference 2017</title><link href="https://dbr.ie/2017/05/29/continous-lifecycle.html" rel="alternate" type="text/html" title="Continuous Lifecycle Conference 2017" /><published>2017-05-29T20:00:00+00:00</published><updated>2017-05-29T20:00:00+00:00</updated><id>https://dbr.ie/2017/05/29/continous-lifecycle</id><content type="html" xml:base="https://dbr.ie/2017/05/29/continous-lifecycle.html">&lt;p&gt;A couple of weeks ago, I went to the second day of &lt;a href=&quot;https://2017.continuouslifecycle.london/&quot;&gt;Continuous Lifecycle&lt;/a&gt;, a conference about all things Continuous Delivery, Continuous Integration and Continuous &amp;lt;insert word here&amp;gt;.&lt;/p&gt;
 
 &lt;p&gt;I’ve written up some notes of the talks that I went to below - hopefully you might find some of them useful / interesting and sorry if any of them aren’t clear.
 I thought the conference was good overall and fairly well organised.
@@ -206,7 +206,7 @@ or destructive, where other neighbouring infected nodes decrease the chance of i
 For destructive I-r synergy, increasing the amount of rewiring within the network leads to systems which are less 
 resilient to epidemics:&lt;/p&gt;
 
-&lt;div class=&quot;yt w2h1&quot;&gt;&lt;iframe data-src=&quot;https://www.youtube.com/embed/OpjKLljfZ1w?controls=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autoplay=1&quot; title=&quot;Destructive Synergy&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;yt w2h1&quot;&gt;&lt;iframe data-src=&quot;https://www.youtube.com/embed/OpjKLljfZ1w?controls=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autoplay=1&amp;amp;mute=1&quot; title=&quot;Destructive Synergy&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;This simulation shows the spread of infection with destructive I-r synergy.
 The left panel shows a regular square lattice whilst the right panel shows a lattice which has undergone 10% rewiring.
@@ -216,7 +216,7 @@ non-infected area where the destructive synergy is weakest.&lt;/p&gt;
 &lt;p&gt;Interestingly, for highly constructive I-r synergy, the increasing randomness caused by rewiring actually hinders the 
 spread of disease and results in a relatively higher resilience to epidemics:&lt;/p&gt;
 
-&lt;div class=&quot;yt w2h1&quot;&gt;&lt;iframe data-src=&quot;https://www.youtube.com/embed/nhpY-0MMS6o?controls=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autoplay=1&quot; title=&quot;Constructive Synergy&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;yt w2h1&quot;&gt;&lt;iframe data-src=&quot;https://www.youtube.com/embed/nhpY-0MMS6o?controls=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autoplay=1&amp;amp;mute=1&quot; title=&quot;Constructive Synergy&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;This simulation shows the spread of infection with constructive I-r synergy.
 The left panel shows a regular square lattice whilst the right panel shows a lattice which has undergone 10% rewiring.
