@@ -17,7 +17,7 @@ action "Init: Bundler" {
 action "Init: Git" {
   needs = "Check Branch"
   uses = "./actions/jekyll-dev"
-  args = "actions/init-git.sh"
+  args = "actions/jekyll-dev/init-git.sh"
 }
 
 action "Init: NPM" {
@@ -59,6 +59,6 @@ action "Test: Accessibility" {
 action "Deploy" {
   needs = ["Lint: Ruby", "Test: HTML", "Test: AMP", "Test: Accessibility"]
   uses = "./actions/jekyll-dev"
-  args = "./actions/deploy.sh"
+  args = "./actions/jekyll-dev/deploy.sh"
   secrets = ["GITHUB_TOKEN"]
 }
