@@ -1,27 +1,19 @@
-workflow "Release from src" {
-  on = "push"
+workflow "Release" {
+  on = "release"
   resolves = "Deploy"
 }
 
-action "Check Branch" {
-  uses = "./actions/check-branch"
-  args = "src"
-}
-
 action "Init: Bundler" {
-  needs = "Check Branch"
   uses = "./actions/jekyll-dev"
   args = "bundle install"
 }
 
 action "Init: Git" {
-  needs = "Check Branch"
   uses = "./actions/jekyll-dev"
   args = "actions/jekyll-dev/init-git.sh"
 }
 
 action "Init: NPM" {
-  needs = "Check Branch"
   uses = "./actions/jekyll-dev"
   args = "npm install"
 }

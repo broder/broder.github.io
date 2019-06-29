@@ -1,14 +1,6 @@
 version: '3'
 
 services:
-  check-branch:
-    build: ./check-branch
-    env_file: .env
-    volumes:
-      - github-home:/github/home
-      - ${PWD-.}/..:/github/workspace
-    working_dir: /github/workspace
-
   jekyll-dev:
     build: ./jekyll-dev
     env_file: .env
