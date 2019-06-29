@@ -1,3 +1,8 @@
+workflow "Test" {
+  on = "push"
+  resolves = ["Lint: Ruby", "Test: HTML", "Test: AMP", "Test: Accessibility"]
+}
+
 workflow "Release" {
   on = "release"
   resolves = "Deploy"
