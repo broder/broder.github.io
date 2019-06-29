@@ -8,37 +8,33 @@
         {% for p in pages %}
         {% if p.title and p.id %}
         {% unless added_pages contains p.id + ',' %}
+
+        {% if page.id == p.id %}
+        <span class="menu-item selected-link">
+            {% icon fa-angle-right %}{{ p.title | downcase }}</span>
+        {% else %}
         <a class="menu-item" href="{{ p.url | relative_url }}">
-            {% if page.id == p.id %}
-            {% icon fa-angle-right %}
-            {% else %}
-            {% icon %}
-            {% endif %}
-            {{ p.title | downcase }}
-        </a>
+            {% icon %}{{ p.title | downcase }}</a>
+        {% endif %}
+
         {% capture added_pages %}{{ added_pages }}{{ p.id }},{% endcapture %}
         {% endunless %}
         {% endif %}
         {% endfor %}
 
         <a class="menu-item" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-            {% icon fa-facebook-square %} facebook
-        </a>
+            {% icon fa-facebook-square %}facebook</a>
 
         <a class="menu-item" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
-            {% icon fa-linkedin-square %} linkedin
-        </a>
+            {% icon fa-linkedin-square %}linkedin</a>
 
         <a class="menu-item" href="https://github.com/{{ site.github_username }}" target="_blank">
-            {% icon fa-github-square %} github
-        </a>
+            {% icon fa-github-square %}github</a>
 
         <a class="menu-item" href="https://steamcommunity.com/id/{{ site.steam_username }}" target="_blank">
-            {% icon fa-steam-square %} steam
-        </a>
+            {% icon fa-steam-square %}steam</a>
 
         <a class="menu-item" href="/feed.xml">
-            {% icon fa-rss-square %} feed
-        </a>
+            {% icon fa-rss-square %}feed</a>
     </nav>
 </header>

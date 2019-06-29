@@ -22,15 +22,20 @@ h3 {
 .selected-link,
 a {
   color: $primary;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
   padding: $unit / 4 $unit / 2;
 }
 
 .selected-link,
 a:hover {
+  text-decoration: none;
   color: $secondary;
   background: $primary;
+}
+
+.disabled-link {
+  text-decoration: none;
 }
 
 .clearfix:after {
