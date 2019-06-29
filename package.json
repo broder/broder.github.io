@@ -3,8 +3,8 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "amphtml-validator": "latest",
-    "pa11y": "latest"
+    "amphtml-validator": "1.0.23",
+    "pa11y": "5.1.0"
   },
   "repository": {
     "type": "git",
