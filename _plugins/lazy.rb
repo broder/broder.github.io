@@ -59,7 +59,7 @@ module Jekyll
             width: size[0],
             height: size[1]
           }
-        rescue StandardError => _
+        rescue StandardError => _e
           puts "Unable to get image dimensions for '#{src}'."
           {}
         end
