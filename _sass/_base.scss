@@ -27,6 +27,10 @@ a {
   padding: $unit / 4 $unit / 2;
 }
 
+p a {
+  padding: 0;
+}
+
 .selected-link,
 a:hover {
   text-decoration: none;
