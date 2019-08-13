@@ -2,7 +2,7 @@
 {% lazy_image id: logo, alt: DBR, src: page.logo %}
 {% else %}
 {% lazy_image id: logo, alt: DBR, src: /assets/logos/default.png %}
-{% unless page.amp %}
+{% unless page.amp or page.id == 'home' %}
 <script>
     setTimeout(function () {
         var xhttp = new XMLHttpRequest();
