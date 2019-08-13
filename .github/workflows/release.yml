@@ -1,0 +1,48 @@
+on:
+  push:
+    branches:
+    - src
+name: Release
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: 'Init: Git'
+      uses: ./actions/jekyll-dev
+      with:
+        args: actions/jekyll-dev/init-git.sh
+    - name: 'Init: NPM'
+      uses: ./actions/jekyll-dev
+      with:
+        args: npm install
+    - name: 'Init: Bundler'
+      uses: ./actions/jekyll-dev
+      with:
+        args: bundle install
+    - name: Build
+      uses: ./actions/jekyll-dev
+      with:
+        args: bundle exec rake build
+    - name: 'Lint: Ruby'
+      uses: ./actions/jekyll-dev
+      with:
+        args: bundle exec rake lint_ruby
+    - name: 'Test: Accessibility'
+      uses: ./actions/jekyll-dev
+      with:
+        args: bundle exec rake test_accessibility
+    - name: 'Test: AMP'
+      uses: ./actions/jekyll-dev
+      with:
+        args: bundle exec rake test_amp
+    - name: 'Test: HTML'
+      uses: ./actions/jekyll-dev
+      with:
+        args: bundle exec rake test_html
+    - name: Deploy
+      uses: ./actions/jekyll-dev
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: ./actions/jekyll-dev/deploy.sh
