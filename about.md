@@ -10,35 +10,51 @@ order:     2
 
 {{ site.description }}
 
-I currently work at Softwire which I joined after having graduated with a MSc and MA in Natural Sciences from the
-University of Cambridge. I'm originally from Northern Ireland.
+I currently work at Google. I previously worked in London for Softwire and before that, I graduated with a MSc and 
+MA in Natural Sciences from the University of Cambridge. I'm originally from Northern Ireland.
 
 
 ## Experience
 
-### Developer / Consultant / Technical Lead at [Softwire][sw]
-_From September 2015_
+### Software Engineer at [Google][goog]
+_From November 2019_
 
-My role has spanned multiple projects across many different tech stacks. Despite this variety, I have been able to
-rapidly adopt the technologies and contribute quickly and substantially. More recently, I've been involved in 
-validating business ideas by creating and iterating multiple prototype apps. Below are some of the projects which I've
+I work on YouTube Ads.
+
+### Developer / Consultant / Technical Lead at [Softwire][sw]
+_From September 2015 until November 2019_
+
+My role spanned multiple projects across many different tech stacks. Despite this variety, I was able to
+rapidly adopt the technologies and contribute quickly and substantially. In later projects, I was involved in 
+validating business ideas by creating and iterating multiple prototype apps. Below are some of the projects which I
 worked on.
 
-I also regularly mentor several more junior developers, organise various tech events and blog posts as Softwire's 
-"Tech Officer" and volunteer at local [Code Club][code-club] sessions.
+I also regularly mentored several more junior developers, organised various tech events and blog posts as Softwire's 
+"Tech Officer" and volunteered at local [Code Club][code-club] sessions.
+
+#### Business Toolkit for [Starling Bank][starling]
+
+* Led a team of 3 developers to scope and develop a [business toolkit][starling-bt] to help SMEs manage bills, invoices
+and tax.
+* Worked in a complex organisational and technical environment with several suppliers and strict data segregation.
+* Took the product from initial concept through to launch using iterative design sprints, agile engineering and user
+research as well as helping to define pricing and go-to-market strategy.
+
+_Technologies:_
+Java, Spring Boot, React, TypeScript, Postgres, Heroku, Kubernetes, Helm
 
 #### Website for the [Office for Product Safety & Standards][opss]
 
 * Initially, during an Alpha phase, evaluated and architected several different technical solutions before selecting
-the most desirable
+the most desirable.
 * Continuously engaged with stakeholders to ensure security compliance, alignment with existing infrastructure and
-conformity with government standards
+conformity with government standards.
 * Then, during the Beta phase, led a team of 8 developers to create and iterate a product safety related case working
-system
+system.
 * Additionally, led a second team of 4 to rapidly develop another service to meet further aspects of the project's
-changing EU Exit requirements
+changing EU Exit requirements.
 * Defined a flexible tech stack to use as the Office for Product Safety & Standards expands and created a roadmap to
-commonise existing services into the platform
+commonise existing services into the platform.
 
 _Technologies:_
 Ruby on Rails, Keycloak, Java, Postgres, Elasticsearch, TravisCI, CloudFoundry, AWS
@@ -48,7 +64,7 @@ Ruby on Rails, Keycloak, Java, Postgres, Elasticsearch, TravisCI, CloudFoundry, 
 #### Website for [Department for Business, Energy & Industrial Services][esas]
 
 * Expanded on an energy saving recommendation website that had been developed during an alpha phase to ensure that it 
-was secure, performant and generally suitable for public use
+was secure, performant and generally suitable for public use.
 
 _Technologies:_
 Angular, WordPress, MySQL, Java, Jenkins, CloudFoundry
@@ -58,16 +74,15 @@ Angular, WordPress, MySQL, Java, Jenkins, CloudFoundry
 #### Code Review for [Department for Education][dfe]
 
 * Over the course of a week, reviewed 3 ASP.NET websites, assessing them on factors including code quality,
-architecture and security as well as assessing the existing supplier on technical leadership
+architecture and security as well as assessing the existing supplier on technical leadership.
 
 _Technologies:_
 C#, ASP.NET MVC, Azure, Visual Studio Team Services
 
 #### Dashboard for [Vivacity Labs][viv]
 
-* Led a team of 2 junior developers to create [a dashboard to display statistics][viv-site]
-* Processed large amounts of real time data (1M+ events per day) into digestible formats for 100s of pitches around
-the world
+* Led a team of 2 junior developers to create [a dashboard to display sports pitch statistics][viv-site].
+* Processed large amounts of real time data into digestible formats for 100s of pitches around the world.
 
 _Technologies:_
 Node.js, TypeScript, React, Redux, Webpack, GitHub, Jenkins, Google Cloud Platform
@@ -75,12 +90,12 @@ Node.js, TypeScript, React, Redux, Webpack, GitHub, Jenkins, Google Cloud Platfo
 #### Performance Tables Discovery for [Department for Education][dfe]
 
 * Documented a large existing data pipeline from an incumbent supplier and identified pain points, before creating an
-idealised architecture and a roadmap to achieve it, with potential savings of £3M
+idealised architecture and a roadmap to achieve it, with potential savings of £3M.
 
 #### Website & Mobile App for [Air Charter Services][acs]
 
 * Helped to develop a hybrid website and mobile app running through Cordova as well as modernising a legacy backend
-system
+system.
 
 _Technologies:_
 Node.js, TypeScript, React, Redux, webpack, Cordova, OneSignal, C#, ASP.NET MVC, Jenkins, AWS
@@ -89,7 +104,7 @@ Node.js, TypeScript, React, Redux, webpack, Cordova, OneSignal, C#, ASP.NET MVC,
 
 * Over the course of 4 weeks, created a prototype app which captured 3D scans using a [Structure sensor][structure]
 and performed computer vision tasks such as feature detection, with the final product presented to senior management
-and used to gather further investment
+and used to gather further investment.
 
 _Technologies:_
 Swift, SceneKit, OpenGL, C++, Point Cloud Library
@@ -104,13 +119,14 @@ Node.js, React, Redux, Webpack, Cordova, OneSignal, Auth0, HockeyApp, AWS -->
 #### Mobile Apps for [Lloyds Banking Group][lbg]
 
 * Along with [Wipro Digital][wipro-digital], facilitated a digital transformation towards more agile ways of working
-and better technical practices
+and better technical practices.
 * Developed features for both their existing [Android][lbg-android] and [iOS][lbg-ios] apps with changes to the
-monolithic internet banking site also required
+monolithic internet banking site also required.
 * Rebuilt the aging Android application to one with a better architecture reducing feature development time from weeks
-to days
+to days.
 * Designed and developed a BDD testing framework, which ran across multiple banking brands and mobile platforms and was
-used by dozens of quality engineers, increasing end-to-end test coverage from 0% to around 80% for “platinum” user journeys
+used by dozens of quality engineers, increasing end-to-end test coverage from 0% to around 80% for “platinum” user
+journeys.
 
 _Technologies:_
 Android: Java, RxJava, Retrofit, Dagger, ButterKnife;
@@ -120,10 +136,10 @@ DevOps: Jenkins, Groovy, Gerrit
 #### Website for [David Lloyd Leisure][dll]
 
 * Performed support tasks for a legacy system followed by full–stack development of [an international website designed
-to acquire new members][dll]
+to acquire new members][dll].
 * Successfully launched to coincide with a large advertising campaign, despite deadlines being brought forward by
-several weeks
-* Designed a continuous deployment pipeline, reducing deployment time from 2 days to a few hours
+several weeks.
+* Designed a continuous deployment pipeline, reducing deployment time from 2 days to a few hours.
 
 _Technologies:_
 Website: C#, .NET, Sitecore, MSSQL, MongoDB, SCSS, jQuery;
@@ -133,7 +149,7 @@ Infrastructure: CloudFlare, Windows Server, New Relic, Loggly
 #### Membership Website for [Soho House][sh]
 
 * Within a strict time frame, designed and developed a website to allow over €300k of international membership fees to
-be received
+be received.
 
 _Technologies:_
 Ruby on Rails, PostgreSQL, CircleCI, Heroku, XE API
@@ -149,7 +165,7 @@ Bootstrap, Express, Heroku, Jade, jQuery, Mailgun, Mocha, Node.js, PostgreSQL, T
 #### Responsive Website Redesign for [UIA][uia]
 
 * Modified an existing website to improve responsiveness for mobile devices, completing the estimated 50 days of work
-within a week
+within a week.
 
 _Technologies:_
 CSS, HTML, Java, Tomcat
@@ -164,7 +180,7 @@ Excel, Express, JavaScript API for Office, Node.js, TypeScript -->
 #### API for [HushKeys][hsk]
 
 * Created a REST API backend for an upcoming social network start–up from scratch with scalability in mind,
-helping them to secure funding from angel investors
+helping them to secure funding from angel investors.
 
 _Technologies:_
 Node.js, TypeScript, Express, Neo4j, AWS Lambda, Heroku
@@ -184,7 +200,7 @@ Active Directory, Cucumber, MySQL, RSpec, Ruby on Rails -->
 
 #### Website for [Channel 5][ch5]
 
-* Updated an internal CMS to allow playlists to be created and content to be prepared for a new online platform
+* Updated an internal CMS to allow playlists to be created and content to be prepared for a new online platform.
 
 _Technologies:_
 Ruby on Rails, MySQL
@@ -303,20 +319,23 @@ English Language: A; English Literature: A; Religious Studies: A -->
 
 ### Open Source contributions
 
-I've participated in [24 Pull Requests][24pr] and [Hacktoberfest][hacktoberfest] for the last couple of years as well
+I've regularly participated in [24 Pull Requests][24pr] and [Hacktoberfest][hacktoberfest] as well
 as contributing to some popular repositories such as [jQuery,][jquery] [Homebrew,][brew] [DefinitelyTyped][dt] and
 [webdriver.io.][wdio]
 
 ### Certifications
 
-* Level 5 Diploma in Leadership and Management *(in progress)*
-* Smartly MBA *(in progress)*
+* Level 5 Diploma in Leadership and Management
+* Smartly MBA
 * Professional Scrum Master I
 * MCSA: Web applications - Programming in C# (70-483), Developing ASP.NET MVC Web Applications (70-486)
 
 
+[goog]: https://www.google.com/
 [sw]: https://www.softwire.com/
 [code-club]: https://www.codeclub.org.uk/
+[starling-bt]: https://www.starlingbank.com/
+[starling]: https://www.starlingbank.com/business-account/sme-business-toolkit/
 [opss]: https://www.gov.uk/government/organisations/office-for-product-safety-and-standards
 [opss-source]: https://github.com/UKGovernmentBEIS/beis-mspsds
 [esas]: https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy
