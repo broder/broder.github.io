@@ -14,5 +14,4 @@
     "rubocop": true
   },
   "ruby.format": "rubocop",
-  "editor.formatOnSaveTimeout": 1500
 }

@@ -36,29 +36,32 @@ module Jekyll
       end
 
       def ampify_yt(doc)
-        doc.css('div.yt').each do |yt|
-          yt.name = 'amp-youtube'
+        doc.css('div.yt').each do |div|
+          div.name = 'amp-youtube'
 
-          yt['layout'] = 'responsive'
-          yt['width'] = 1280
-          yt['height'] = 720
+          div['layout'] = 'responsive'
+          div['width'] = 1280
+          div['height'] = 720
 
-          yt_params = %r{embed\/.*$}.match(yt.children.first.attributes['data-src'])
-          split_yt_params = yt_params.to_s.split '?'
+          add_yt_params(div, %r{embed/.*$}.match(div.children.first.attributes['data-src']))
 
-          yt['data-videoid'] = split_yt_params.first.sub 'embed/', ''
+          div.delete 'class'
+          div.children = ''
+        end
+      end
 
-          split_yt_params.last.split('&').each do |param|
-            split_param = param.split '='
-            if split_param.first == 'autoplay'
-              yt[split_param.first] = split_param.last
-            else
-              yt["data-param-#{split_param.first}"] = split_param.last
-            end
+      def add_yt_params(div, yt_params)
+        split_yt_params = yt_params.to_s.split '?'
+
+        div['data-videoid'] = split_yt_params.first.sub 'embed/', ''
+
+        split_yt_params.last.split('&').each do |param|
+          split_param = param.split '='
+          if split_param.first == 'autoplay'
+            div[split_param.first] = split_param.last
+          else
+            div["data-param-#{split_param.first}"] = split_param.last
           end
-
-          yt.delete 'class'
-          yt.children = ''
         end
       end
     end

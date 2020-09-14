@@ -1,10 +1,9 @@
 {
   "name": "broder.github.io-test-deps",
-  "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "amphtml-validator": "1.0.23",
-    "pa11y": "5.2.0"
+    "amphtml-validator": "1.0.33",
+    "pa11y": "5.3.0"
   },
   "repository": {
     "type": "git",
