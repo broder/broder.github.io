@@ -13,9 +13,9 @@
 ## Setup
 1. Clone the repository.
 2. `cd` to the cloned directory.
-3. Checkout the `src` branch by running `git checkout src`.
+3. Checkout the `main` branch by running `git checkout main`.
 4. Install the dependencies by running `bundle install`.
-5. Add a git worktree for deployment by running `git worktree add ./_site origin/master`.
+5. Add a git worktree for deployment by running `git worktree add ./_site origin/deploy`.
 6. Launch the site with `bundle exec jekyll serve`.
 
 

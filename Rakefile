@@ -5,7 +5,7 @@ build_folder = './_site'
 
 task :clean do
   `git fetch`
-  `cd #{build_folder} && git checkout -f origin/master`
+  `cd #{build_folder} && git checkout -f origin/deploy`
 end
 
 task :build do
@@ -17,7 +17,7 @@ task :deploy do
   msg.sub!("\n", '')
   `cd #{build_folder} && git add .`
   `cd #{build_folder} && git commit -m "🚀 updated build to '#{msg}'"`
-  `cd #{build_folder} && git push origin HEAD:master`
+  `cd #{build_folder} && git push origin HEAD:deploy`
 end
 
 task :generate_logos do

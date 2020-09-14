@@ -1,6 +1,6 @@
 #!/bin/sh
 set -eux
 
-git worktree add ./_site origin/master
+git worktree add ./_site origin/deploy
 cd ./_site
-git checkout -f origin/master
+git checkout -f origin/deploy

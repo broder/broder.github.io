@@ -1,8 +1,8 @@
 on:
   push:
     branches:
-    - "!refs/heads/master"
-    - "!refs/heads/src"
+    - "!deploy"
+    - "!main"
 name: Test
 jobs:
   test:

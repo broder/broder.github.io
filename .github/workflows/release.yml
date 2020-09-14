@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-    - src
+    - main
 name: Release
 jobs:
   release:
