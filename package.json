@@ -2,7 +2,7 @@
   "name": "broder.github.io-test-deps",
   "private": true,
   "devDependencies": {
-    "amphtml-validator": "1.0.33",
+    "amphtml-validator": "1.0.34",
     "pa11y": "5.3.0"
   },
   "repository": {
